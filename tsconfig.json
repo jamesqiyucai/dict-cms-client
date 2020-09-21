@@ -12,6 +12,30 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/dictcmsclient/service-source/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/dictcmsclient/service-source/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/dictcmsclient/ui-model-editable/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/dictcmsclient/ui-model-editable/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/dictcmsclient/ui-model-source/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/dictcmsclient/ui-model-source/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/dictcmsclient/ui-component-source/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/dictcmsclient/ui-component-source/tsconfig.spec.json"
     }
-]
+  ]
 }

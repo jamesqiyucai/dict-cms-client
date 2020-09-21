@@ -119,6 +119,170 @@
           }
         }
       }
-    }},
-  "defaultProject": "dict-cms-client"
+    },
+    "@dictcmsclient/service-source": {
+      "projectType": "library",
+      "root": "projects/dictcmsclient/service-source",
+      "sourceRoot": "projects/dictcmsclient/service-source/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dictcmsclient/service-source/tsconfig.lib.json",
+            "project": "projects/dictcmsclient/service-source/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/dictcmsclient/service-source/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dictcmsclient/service-source/src/test.ts",
+            "tsConfig": "projects/dictcmsclient/service-source/tsconfig.spec.json",
+            "karmaConfig": "projects/dictcmsclient/service-source/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dictcmsclient/service-source/tsconfig.lib.json",
+              "projects/dictcmsclient/service-source/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dictcmsclient/ui-model-editable": {
+      "projectType": "library",
+      "root": "projects/dictcmsclient/ui-model-editable",
+      "sourceRoot": "projects/dictcmsclient/ui-model-editable/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dictcmsclient/ui-model-editable/tsconfig.lib.json",
+            "project": "projects/dictcmsclient/ui-model-editable/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/dictcmsclient/ui-model-editable/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dictcmsclient/ui-model-editable/src/test.ts",
+            "tsConfig": "projects/dictcmsclient/ui-model-editable/tsconfig.spec.json",
+            "karmaConfig": "projects/dictcmsclient/ui-model-editable/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dictcmsclient/ui-model-editable/tsconfig.lib.json",
+              "projects/dictcmsclient/ui-model-editable/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dictcmsclient/ui-model-source": {
+      "projectType": "library",
+      "root": "projects/dictcmsclient/ui-model-source",
+      "sourceRoot": "projects/dictcmsclient/ui-model-source/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dictcmsclient/ui-model-source/tsconfig.lib.json",
+            "project": "projects/dictcmsclient/ui-model-source/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/dictcmsclient/ui-model-source/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dictcmsclient/ui-model-source/src/test.ts",
+            "tsConfig": "projects/dictcmsclient/ui-model-source/tsconfig.spec.json",
+            "karmaConfig": "projects/dictcmsclient/ui-model-source/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dictcmsclient/ui-model-source/tsconfig.lib.json",
+              "projects/dictcmsclient/ui-model-source/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dictcmsclient/ui-component-source": {
+      "projectType": "library",
+      "root": "projects/dictcmsclient/ui-component-source",
+      "sourceRoot": "projects/dictcmsclient/ui-component-source/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dictcmsclient/ui-component-source/tsconfig.lib.json",
+            "project": "projects/dictcmsclient/ui-component-source/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/dictcmsclient/ui-component-source/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dictcmsclient/ui-component-source/src/test.ts",
+            "tsConfig": "projects/dictcmsclient/ui-component-source/tsconfig.spec.json",
+            "karmaConfig": "projects/dictcmsclient/ui-component-source/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dictcmsclient/ui-component-source/tsconfig.lib.json",
+              "projects/dictcmsclient/ui-component-source/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "dict-cms-client",
+  "cli": {
+    "analytics": false
+  }
 }
