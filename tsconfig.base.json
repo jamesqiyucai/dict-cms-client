@@ -14,14 +14,6 @@
     "lib": [
       "es2018",
       "dom"
-    ],
-    "paths": {
-//      "@dictcmsclient/ui-model-source": [
-//        "dist/dictcmsclient/ui-model-source"
-//      ],
-//      "@dictcmsclient/ui-component-source": [
-//        "dist/dictcmsclient/ui-component-source"
-//      ]
-    }
+    ]
   }
 }

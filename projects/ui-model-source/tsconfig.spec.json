@@ -1,0 +1,25 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../../out-tsc/spec",
+    "paths": {
+      "service-source": [
+        "dist/service-source"
+      ],
+      "ui-model-editable": [
+        "dist/ui-model-editable"
+      ]
+    },
+    "types": [
+      "jasmine"
+    ]
+  },
+  "files": [
+    "src/test.ts"
+  ],
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}
