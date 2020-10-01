@@ -3,123 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dict-cms-client": {
-      "projectType": "application",
-      "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/dict-cms-client",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
-                }
-              ]
-            }
-          }
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "dict-cms-client:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "dict-cms-client:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "dict-cms-client:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "dict-cms-client:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "dict-cms-client:serve:production"
-            }
-          }
-        }
-      }
-    },
     "@dictcmsclient/service-source": {
       "projectType": "library",
       "root": "projects/dictcmsclient/service-source",
@@ -279,9 +162,126 @@
           }
         }
       }
+    },
+    "client-entry": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/client-entry",
+      "sourceRoot": "projects/client-entry/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/client-entry",
+            "index": "projects/client-entry/src/index.html",
+            "main": "projects/client-entry/src/main.ts",
+            "polyfills": "projects/client-entry/src/polyfills.ts",
+            "tsConfig": "projects/client-entry/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/client-entry/src/favicon.ico",
+              "projects/client-entry/src/assets"
+            ],
+            "styles": [
+              "projects/client-entry/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/client-entry/src/environments/environment.ts",
+                  "with": "projects/client-entry/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "client-entry:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "client-entry:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "client-entry:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/client-entry/src/test.ts",
+            "polyfills": "projects/client-entry/src/polyfills.ts",
+            "tsConfig": "projects/client-entry/tsconfig.spec.json",
+            "karmaConfig": "projects/client-entry/karma.conf.js",
+            "assets": [
+              "projects/client-entry/src/favicon.ico",
+              "projects/client-entry/src/assets"
+            ],
+            "styles": [
+              "projects/client-entry/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/client-entry/tsconfig.app.json",
+              "projects/client-entry/tsconfig.spec.json",
+              "projects/client-entry/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/client-entry/e2e/protractor.conf.js",
+            "devServerTarget": "client-entry:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "client-entry:serve:production"
+            }
+          }
+        }
+      }
     }
   },
-  "defaultProject": "dict-cms-client",
+  "defaultProject": "client-entry",
   "cli": {
     "analytics": false
   }

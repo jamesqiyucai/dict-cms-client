@@ -8,9 +8,6 @@
   "files": [],
   "references": [
     {
-      "path": "./tsconfig.app.json"
-    },
-    {
       "path": "./tsconfig.spec.json"
     },
     {
@@ -36,6 +33,12 @@
     },
     {
       "path": "./projects/dictcmsclient/ui-component-source/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/client-entry/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/client-entry/tsconfig.spec.json"
     }
   ]
 }

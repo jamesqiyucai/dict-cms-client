@@ -10,7 +10,15 @@
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "paths": {
+      "@dictcmsclient/service-source": [
+        "dist/dictcmsclient/service-source"
+      ],
+      "@dictcmsclient/ui-model-editable": [
+        "dist/dictcmsclient/ui-model-editable"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,

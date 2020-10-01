@@ -8,4 +8,7 @@ import {ViewableBookSourceModel} from '@dictcmsclient/ui-model-source';
 })
 export class ReviewableBookSourceComponent {
  @Input() public model: ViewableBookSourceModel;
+ public get editable(): boolean {
+   return false;
+ }
 }

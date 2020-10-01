@@ -1,5 +1,4 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {EditableBookSourceModelImpl} from '../../../../ui-model-source/src/lib/book_source/editable-book-source-model-impl';
 
 @Component({
   selector: 'lib-editable-book-source',
@@ -7,5 +6,9 @@ import {EditableBookSourceModelImpl} from '../../../../ui-model-source/src/lib/b
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EditableBookSourceComponent {
-  @Input() public model: EditableBookSourceModelImpl;
+  @Input() public model: ;
+
+  public get editable(): boolean {
+    return this.model.
+  }
 }

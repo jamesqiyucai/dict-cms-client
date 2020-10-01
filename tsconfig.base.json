@@ -16,18 +16,12 @@
       "dom"
     ],
     "paths": {
-      "@dictcmsclient/service-source": [
-        "dist/dictcmsclient/service-source"
-      ],
-      "@dictcmsclient/ui-model-editable": [
-        "dist/dictcmsclient/ui-model-editable"
-      ],
-      "@dictcmsclient/ui-model-source": [
-        "dist/dictcmsclient/ui-model-source"
-      ],
-      "@dictcmsclient/ui-component-source": [
-        "dist/dictcmsclient/ui-component-source"
-      ]
+//      "@dictcmsclient/ui-model-source": [
+//        "dist/dictcmsclient/ui-model-source"
+//      ],
+//      "@dictcmsclient/ui-component-source": [
+//        "dist/dictcmsclient/ui-component-source"
+//      ]
     }
   }
 }
