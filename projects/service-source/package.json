@@ -1,7 +1,7 @@
 {
   "name": "service-source",
   "version": "1.0.0",
-  "dependencies": {
+  "peerDependencies": {
     "tslib": "^2.0.0"
   }
 }

@@ -1,0 +1,42 @@
+<div>
+    <input
+      #authorInput
+      [disabled]="editable"
+      autocomplete="off"
+      placeholder="Author"
+      [value]="model.author$ | async"
+      (input)="onAuthorChange(authorInput.value)"
+    >
+    <input
+      #newspaperTitleInput
+      [disabled]="editable"
+      autocomplete="off"
+      placeholder="NewspaperTitle"
+      [value]="model.journalTitle$ | async"
+      (input)="onTitleChange(newspaperTitleInput.value)"
+    >
+    <input
+      #passageTitleInput
+      [disabled]="editable"
+      placeholder="PassageTitle"
+      [value]="model.passageTitle$ | async"
+      (input)="onPassageTitleChange(passageTitleInput.value)"
+    >
+    <input
+      #pageNumberInput
+      [disabled]="editable"
+      type="number"
+      placeholder="PageNumber"
+      [value]="model.page$ | async"
+      (input)="onPageChange(pageNumberInput.value)"
+    >
+    <label>PublishDate:
+    <input
+      #dateInput
+      [disabled]="editable"
+      type="date"
+      placeholder="PublishingDate"
+      [value]="model.publishDate$ | async"
+      (input)="onPublishDateChange(dateInput.value)"
+    ></label>
+  </div>

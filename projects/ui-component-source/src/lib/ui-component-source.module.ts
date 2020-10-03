@@ -22,4 +22,4 @@ import {CommonModule} from '@angular/common';
     EditableJournalSourceComponent
   ]
 })
-export class UiComponentSourceModule { }
+export class UIComponentSourceModule { }
