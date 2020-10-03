@@ -18,6 +18,9 @@
     "declaration": true,
     "inlineSources": true,
     "types": [],
+    "typeRoots": [
+      "dist"
+    ],
     "lib": [
       "dom",
       "es2018"

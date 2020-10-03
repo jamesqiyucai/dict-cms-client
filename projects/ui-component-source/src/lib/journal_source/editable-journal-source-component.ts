@@ -2,9 +2,9 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
 
 @Component({
   selector: 'lib-editable-journal-source',
-  templateUrl: 'editable-journal-source-component',
+  templateUrl: 'journal-source-component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EditableJournalSourceComponent {
-
+  
 }

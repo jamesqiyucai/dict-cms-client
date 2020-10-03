@@ -1,3 +1,4 @@
+import { EditableBookSourceModel } from 'ui-model-source';
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 
 @Component({
@@ -6,11 +7,26 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EditableBookSourceComponent {
-  @Input() public model;
-  public setAuthor(newAuthor: string): void {}
-  public onTitleChange(newTitle: string): void {}
-  public onPageChange(newPage: string): void {}
-  public onPublishedPlaceChange(newPlace: string): void {}
-  public onPublishedYearChange(newYear: string): void {}
-  public onInitialPublishYearChange(newYear: string): void {}
+  @Input() public model: EditableBookSourceModel;
+  public get editable(): boolean {
+    return this.model.editable;
+  }
+  public setAuthor(newAuthor: string): void {
+    this.model.setAuthor(newAuthor);
+  }
+  public onTitleChange(newTitle: string): void {
+    this.model.setTitle(newTitle);
+  }
+  public onPageChange(newPage: string): void {
+    this.model.setPage(newPage);
+  }
+  public onPublishedPlaceChange(newPlace: string): void {
+    this.model.setPublishPlace(newPlace);
+  }
+  public onPublishedYearChange(newYear: string): void {
+    this.model.setPublishYear(newYear);
+  }
+  public onInitialPublishYearChange(newYear: string): void {
+    this.model.setInitialPublishYear(newYear);
+  }
 }

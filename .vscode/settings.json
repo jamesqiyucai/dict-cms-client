@@ -1,0 +1,11 @@
+{
+    "editor.fontFamily": "Fira Code Retina",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": 400,
+    "typescript.preferences.includePackageJsonAutoImports": "on",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.suggest.autoImports": false,
+    "typescript.suggest.paths": false,
+    "autoimport.showNotifications": true,
+    "files.autoSave": "afterDelay"
+}

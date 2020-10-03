@@ -1,36 +1,36 @@
 <div>
   <input
     #authorInput
-    [disabled]=""
+    [disabled]="!editable"
     placeholder="Author"
     [value]="model.author$ | async"
     (input)="model.setAuthor(authorInput.value)"
   >
   <input
-    [disabled]="!model.editable"
+    [disabled]="!editable"
     #bookTitleInput
     placeholder="BookTitle"
-    [value]="model!.title$ | async"
+    [value]="model.title$ | async"
     (input)="onTitleChange(bookTitleInput.value)"
   >
   <input
-    [disabled]="!model.editable"
+    [disabled]="!editable"
     #pageInput
     placeholder="PageNumber"
     type="number"
-    [value]="model!.page$ | async"
+    [value]="model.page$ | async"
     (input)="onPageChange(pageInput.value)"
   >
   <input
-    [disabled]="!model.editable"
+    [disabled]="!editable"
     #publishedPlaceInput
     placeholder="PublishedPlace"
-    [value]="model!.publishPlace$ | async"
+    [value]="model.publishPlace$ | async"
     (input)="onPublishedPlaceChange(publishedPlaceInput.value)"
   >
   <input
     #publishedYearInput
-    [disabled]="!model.editable"
+    [disabled]="!editable"
     type="number"
     placeholder="PublishedYear"
     [value]="model.publishYear$ | async"
@@ -38,7 +38,7 @@
   >
   <input
     #initialPublishingYearInput
-    [disabled]="!model.editable"
+    [disabled]="!editable"
     type="number"
     placeholder="InitialPublishingYear"
     [value]="model.initialPublishYear$ | async"
