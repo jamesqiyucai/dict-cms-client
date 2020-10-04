@@ -1,10 +1,10 @@
 {
-  "name": "ui-component-source",
+  "name": "ui-directive-editable",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
-    "ui-model-source": "1.0.0",
-    "@angular/core": "^10.0.14"
+    "@angular/core": "^10.0.14",
+    "immutable": "^4.0.0-rc.12"
   },
   "dependencies": {
     "tslib": "^2.0.0"

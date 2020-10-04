@@ -279,6 +279,46 @@
           }
         }
       }
+    },
+    "ui-directive-editable": {
+      "projectType": "library",
+      "root": "projects/ui-directive-editable",
+      "sourceRoot": "projects/ui-directive-editable/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-directive-editable/tsconfig.lib.json",
+            "project": "projects/ui-directive-editable/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-directive-editable/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-directive-editable/src/test.ts",
+            "tsConfig": "projects/ui-directive-editable/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-directive-editable/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-directive-editable/tsconfig.lib.json",
+              "projects/ui-directive-editable/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "client-entry",

@@ -39,6 +39,12 @@
     },
     {
       "path": "./projects/client-entry/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-directive-editable/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-directive-editable/tsconfig.spec.json"
     }
   ]
 }
