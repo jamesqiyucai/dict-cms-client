@@ -45,6 +45,12 @@
     },
     {
       "path": "./projects/ui-directive-editable/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-directive-list-manipulator/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-directive-list-manipulator/tsconfig.spec.json"
     }
   ]
 }
