@@ -1,5 +1,9 @@
 <div cdkDropList>
-  <ng-container *ngFor="let model of elementModels">
-    <div cdkDrag></div>
-  </ng-container>
+  <lib-list-manipulator-element-generator
+    *ngFor="let elementModel of elementModels"
+    cdkDrag
+    [elementTemplate]="elementTemplate"
+    [elementModel]="elementModel"
+  >
+  </lib-list-manipulator-element-generator>
 </div>
