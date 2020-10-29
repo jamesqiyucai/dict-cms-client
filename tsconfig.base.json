@@ -14,12 +14,6 @@
     "lib": [
       "es2018",
       "dom"
-    ],
-    "paths": {
-      "ui-directive-list-manipulator": [
-        "dist/ui-directive-list-manipulator/ui-directive-list-manipulator",
-        "dist/ui-directive-list-manipulator"
-      ]
-    }
+    ]
   }
 }

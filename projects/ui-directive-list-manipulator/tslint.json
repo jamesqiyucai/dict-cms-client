@@ -12,6 +12,8 @@
       "element",
       "lib",
       "kebab-case"
-    ]
+    ],
+    "variable-name": false,
+    "no-trailing-whitespace": false
   }
 }

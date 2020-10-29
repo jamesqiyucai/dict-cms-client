@@ -6,24 +6,23 @@ import { Component, OnInit, ChangeDetectionStrategy, TemplateRef, Input } from '
   styleUrls: ['./list-manipulator-container.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ListManipulatorContainerComponent implements OnInit {
+export class ListManipulatorContainerComponent {
 
   private childTemplate: TemplateRef<any>;
 
-  private elementModels: any[];
+  private _elementModels: any[];
+  public get elementModels(): any[] {
+    return this._elementModels;
+  }
 
   @Input() public set data(newData: TemplateRef<any>) {
     this.childTemplate = newData;
-    
   }
 
   @Input() public set model(elementModels: any[]) {
-    this.elementModels = elementModels;
+    this._elementModels = elementModels;
   }
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
