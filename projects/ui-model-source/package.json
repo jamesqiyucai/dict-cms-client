@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "peerDependencies": {
     "service-source": "1.0.0",
-    "ui-model-editable": "1.0.0",
+    "ui-model-editable": "1.0.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"
