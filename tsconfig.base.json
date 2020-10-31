@@ -14,6 +14,16 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ui-model-translation": [
+        "dist/ui-model-translation/ui-model-translation",
+        "dist/ui-model-translation"
+      ],
+      "ui-component-translation": [
+        "dist/ui-component-translation/ui-component-translation",
+        "dist/ui-component-translation"
+      ]
+    }
   }
 }

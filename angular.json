@@ -359,6 +359,86 @@
           }
         }
       }
+    },
+    "ui-model-translation": {
+      "projectType": "library",
+      "root": "projects/ui-model-translation",
+      "sourceRoot": "projects/ui-model-translation/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-translation/tsconfig.lib.json",
+            "project": "projects/ui-model-translation/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-translation/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-translation/src/test.ts",
+            "tsConfig": "projects/ui-model-translation/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-translation/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-translation/tsconfig.lib.json",
+              "projects/ui-model-translation/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-translation": {
+      "projectType": "library",
+      "root": "projects/ui-component-translation",
+      "sourceRoot": "projects/ui-component-translation/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-translation/tsconfig.lib.json",
+            "project": "projects/ui-component-translation/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-translation/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-translation/src/test.ts",
+            "tsConfig": "projects/ui-component-translation/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-translation/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-translation/tsconfig.lib.json",
+              "projects/ui-component-translation/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "client-entry",

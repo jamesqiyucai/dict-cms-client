@@ -51,6 +51,18 @@
     },
     {
       "path": "./projects/ui-directive-list-manipulator/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-translation/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-translation/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-translation/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-translation/tsconfig.spec.json"
     }
   ]
 }
