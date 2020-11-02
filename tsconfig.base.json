@@ -23,6 +23,30 @@
       "ui-component-translation": [
         "dist/ui-component-translation/ui-component-translation",
         "dist/ui-component-translation"
+      ],
+      "ui-model-keyword": [
+        "dist/ui-model-keyword/ui-model-keyword",
+        "dist/ui-model-keyword"
+      ],
+      "ui-component-keyword": [
+        "dist/ui-component-keyword/ui-component-keyword",
+        "dist/ui-component-keyword"
+      ],
+      "service-translation": [
+        "dist/service-translation/service-translation",
+        "dist/service-translation"
+      ],
+      "service-keyword": [
+        "dist/service-keyword/service-keyword",
+        "dist/service-keyword"
+      ],
+      "service-example": [
+        "dist/service-example/service-example",
+        "dist/service-example"
+      ],
+      "service-example-proposal": [
+        "dist/service-example-proposal/service-example-proposal",
+        "dist/service-example-proposal"
       ]
     }
   }

@@ -63,6 +63,45 @@
     },
     {
       "path": "./projects/ui-component-translation/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/client-test/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/ui-model-keyword/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-keyword/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-keyword/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-keyword/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-translation/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-translation/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-keyword/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-keyword/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-proposal/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-proposal/tsconfig.spec.json"
     }
   ]
 }
