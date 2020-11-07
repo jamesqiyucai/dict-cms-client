@@ -1,7 +1,7 @@
-import {SourceHandle} from "./source-handle";
-import {Observable} from "rxjs";
+import {Observable} from 'rxjs';
+import {SourceHandle} from 'service-source';
 
-export interface ReviewableJournalSourceHandle extends SourceHandle {
+export interface ExampleSourceJournalHandle extends SourceHandle {
   readonly author$: Observable<string>;
   readonly journalTitle$: Observable<string>;
   readonly page$: Observable<string>;

@@ -1,6 +1,6 @@
-import {ReviewableJournalSourceHandle} from "./reviewable-journal-source-handle";
+import {ExampleSourceJournalHandle} from 'service-example-source-journal';
 
-export interface EditableJournalSourceHandle extends ReviewableJournalSourceHandle {
+export interface ExampleProposalSourceJournalHandle extends ExampleSourceJournalHandle {
   setAuthor(newAuthor: string): void;
   setJournalTitle(newTitle: string): void;
   setPage(newPage: string): void;

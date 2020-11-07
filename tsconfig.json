@@ -102,6 +102,66 @@
     },
     {
       "path": "./projects/service-example-proposal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-source/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-source/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-proposal-source/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-proposal-source/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-keyword/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-keyword/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-proposal-keyword/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-proposal-keyword/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-translation/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-translation/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-proposal-translation/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-proposal-translation/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-source-book/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-source-book/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-source-journal/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-source-journal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-proposal-source-book/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-proposal-source-book/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/service-example-proposal-source-journal/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/service-example-proposal-source-journal/tsconfig.spec.json"
     }
   ]
 }

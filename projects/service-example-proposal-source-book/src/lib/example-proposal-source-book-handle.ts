@@ -1,6 +1,6 @@
-import {ReviewableBookSourceHandle} from "./reviewable-book-source-handle";
+import {ExampleSourceBookHandle} from 'service-example-source-book';
 
-export interface EditableBookSourceHandle extends ReviewableBookSourceHandle {
+export interface ExampleProposalSourceBookHandle extends ExampleSourceBookHandle {
   setAuthor(newAuthor: string): void;
   setTitle(newTitle: string): void;
   setPage(newPage: string): void;
