@@ -11,11 +11,7 @@
       "dom",
       "es2018"
     ],
-    "paths": {
-      "service-example-keyword": [
-        'dist/'
-      ]
-    }
+    "paths": {},
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,

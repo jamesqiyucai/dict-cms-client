@@ -10,7 +10,12 @@
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "paths": {
+      "service-example-keyword": [
+        "dist/service-example-keyword"
+      ]
+    },
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,

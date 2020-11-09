@@ -10,7 +10,12 @@
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "paths": {
+      "service-example-proposal-source-book": [
+        "dist/service-example-proposal-source-book"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,
