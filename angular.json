@@ -1181,6 +1181,166 @@
           }
         }
       }
+    },
+    "ui-model-example-source-book": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-source-book",
+      "sourceRoot": "projects/ui-model-example-source-book/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-source-book/tsconfig.lib.json",
+            "project": "projects/ui-model-example-source-book/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-source-book/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-source-book/src/test.ts",
+            "tsConfig": "projects/ui-model-example-source-book/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-source-book/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-source-book/tsconfig.lib.json",
+              "projects/ui-model-example-source-book/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-source-journal": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-source-journal",
+      "sourceRoot": "projects/ui-model-example-source-journal/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-source-journal/tsconfig.lib.json",
+            "project": "projects/ui-model-example-source-journal/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-source-journal/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-source-journal/src/test.ts",
+            "tsConfig": "projects/ui-model-example-source-journal/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-source-journal/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-source-journal/tsconfig.lib.json",
+              "projects/ui-model-example-source-journal/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-proposal-source-book": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-proposal-source-book",
+      "sourceRoot": "projects/ui-model-example-proposal-source-book/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-proposal-source-book/tsconfig.lib.json",
+            "project": "projects/ui-model-example-proposal-source-book/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-proposal-source-book/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-proposal-source-book/src/test.ts",
+            "tsConfig": "projects/ui-model-example-proposal-source-book/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-proposal-source-book/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-proposal-source-book/tsconfig.lib.json",
+              "projects/ui-model-example-proposal-source-book/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-proposal-source-journal": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-proposal-source-journal",
+      "sourceRoot": "projects/ui-model-example-proposal-source-journal/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-proposal-source-journal/tsconfig.lib.json",
+            "project": "projects/ui-model-example-proposal-source-journal/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-proposal-source-journal/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-proposal-source-journal/src/test.ts",
+            "tsConfig": "projects/ui-model-example-proposal-source-journal/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-proposal-source-journal/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-proposal-source-journal/tsconfig.lib.json",
+              "projects/ui-model-example-proposal-source-journal/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "client-entry",

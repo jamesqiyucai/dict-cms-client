@@ -87,6 +87,22 @@
       "service-example-proposal-source-journal": [
         "dist/service-example-proposal-source-journal/service-example-proposal-source-journal",
         "dist/service-example-proposal-source-journal"
+      ],
+      "ui-model-example-source-book": [
+        "dist/ui-model-example-source-book/ui-model-example-source-book",
+        "dist/ui-model-example-source-book"
+      ],
+      "ui-model-example-source-journal": [
+        "dist/ui-model-example-source-journal/ui-model-example-source-journal",
+        "dist/ui-model-example-source-journal"
+      ],
+      "ui-model-example-proposal-source-book": [
+        "dist/ui-model-example-proposal-source-book/ui-model-example-proposal-source-book",
+        "dist/ui-model-example-proposal-source-book"
+      ],
+      "ui-model-example-proposal-source-journal": [
+        "dist/ui-model-example-proposal-source-journal/ui-model-example-proposal-source-journal",
+        "dist/ui-model-example-proposal-source-journal"
       ]
     }
   }

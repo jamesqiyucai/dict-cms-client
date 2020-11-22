@@ -162,6 +162,30 @@
     },
     {
       "path": "./projects/service-example-proposal-source-journal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-source-book/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-source-book/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-source-journal/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-source-journal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-source-book/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-source-book/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-source-journal/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-source-journal/tsconfig.spec.json"
     }
   ]
 }
