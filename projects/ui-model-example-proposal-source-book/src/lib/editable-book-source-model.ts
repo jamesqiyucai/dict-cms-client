@@ -1,4 +1,4 @@
-import {ViewableBookSourceModel} from "../../../ui-model-example-source-book/src/lib/viewable-book-source-model";
+import {ViewableBookSourceModel} from "../../../ui-model-example-source-book/src/lib/example-source-book-model";
 import {Editable} from "ui-model-editable";
 import {Observable} from "rxjs";
 

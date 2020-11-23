@@ -1,7 +1,7 @@
 import {ReviewableBookSourceHandle, SourceType} from "@dictcmsclient/service-source";
 import {BehaviorSubject} from "rxjs";
-import {ViewableBookSourceModelFactory} from "./viewable-book-source-model-factory";
-import {ViewableBookSourceModelImpl} from "./viewable-book-source-model-impl";
+import {ViewableBookSourceModelFactory} from "./example-source-book-model-factory";
+import {ViewableBookSourceModelImpl} from "./example-source-book-model-impl";
 import {skip} from "rxjs/operators";
 
 export class FakeReviewableBookSourceHandle implements ReviewableBookSourceHandle {

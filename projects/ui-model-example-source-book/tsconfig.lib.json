@@ -10,7 +10,18 @@
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "paths": {
+      "ui-model-source":[
+        "dist/ui-model-source"
+      ],
+      "service-example-source-book": [
+        "dist/service-example-source-book"
+      ],
+      "service-source": [
+        "dist/service-source"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,

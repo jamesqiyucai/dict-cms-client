@@ -1,4 +1,4 @@
-import {FakeReviewableBookSourceHandle} from '../../../ui-model-example-source-book/src/lib/viewable-book-source-model-impl.spec';
+import {FakeReviewableBookSourceHandle} from '../../../ui-model-example-source-book/src/lib/example-source-book-model-impl.spec';
 import {EditableBookSourceHandle, SourceType} from 'service-source';
 import {EditableBookSourceModelFactory} from './editable-book-source-model-factory';
 import {EditableBookSourceModelImpl} from './editable-book-source-model-impl';

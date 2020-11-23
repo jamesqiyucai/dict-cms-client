@@ -1,7 +1,7 @@
-import {Observable} from "rxjs";
-import {BookSourceModel} from "../../../ui-model-source/src/lib/book_source/book-source-model";
+import {Observable} from 'rxjs';
+import { BaseSourceModel } from 'ui-model-source';
 
-export interface ViewableBookSourceModel extends BookSourceModel {
+export interface ExampleSourceBookModel extends BaseSourceModel {
   readonly author$: Observable<string>;
   readonly title$: Observable<string>;
   readonly page$: Observable<string>;

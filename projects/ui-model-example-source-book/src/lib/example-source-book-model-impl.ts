@@ -1,12 +1,13 @@
-import {ViewableBookSourceModel} from "./viewable-book-source-model";
-import {BaseSourceModelImpl} from "../../../ui-model-source/src/lib/base-source-model-impl";
-import {ReviewableBookSourceHandle, SourceType} from "service-source";
-import {BehaviorSubject, of} from "rxjs";
-import {mergeMap} from "rxjs/operators";
+import {ExampleSourceBookModel} from './example-source-book-model';
+import {BaseSourceModelImpl} from 'ui-model-source';
+import {ExampleSourceBookHandle} from 'service-example-source-book';
+import {SourceType} from 'service-source';
+import {BehaviorSubject, of} from 'rxjs';
+import {mergeMap} from 'rxjs/operators';
 
-export class ViewableBookSourceModelImpl extends BaseSourceModelImpl implements ViewableBookSourceModel {
+export class ExampleSourceBookModelImpl extends BaseSourceModelImpl implements ExampleSourceBookModel {
 
-  protected _handle: ReviewableBookSourceHandle;
+  protected _handle: ExampleSourceBookHandle;
   protected readonly _authorBuffer$: BehaviorSubject<string | null>;
   protected readonly _titleBuffer$: BehaviorSubject<string>;
   protected readonly _pageBuffer$: BehaviorSubject<string>;
@@ -14,7 +15,7 @@ export class ViewableBookSourceModelImpl extends BaseSourceModelImpl implements 
   protected readonly _publishedYearBuffer$: BehaviorSubject<string>;
   protected readonly _publishedPlaceBuffer$: BehaviorSubject<string>;
 
-  constructor(handle: ReviewableBookSourceHandle) {
+  constructor(handle: ExampleSourceBookHandle) {
     super(SourceType.Book);
     this._authorBuffer$ = new BehaviorSubject<string | null>(null);
     this._titleBuffer$ = new BehaviorSubject<string>(null);

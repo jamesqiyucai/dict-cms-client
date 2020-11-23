@@ -1,5 +1,5 @@
 import {EditableBookSourceModel} from "../../../ui-model-source/src/public-api";
-import {ViewableBookSourceModelImpl} from "../../../ui-model-example-source-book/src/lib/viewable-book-source-model-impl";
+import {ViewableBookSourceModelImpl} from "../../../ui-model-example-source-book/src/lib/example-source-book-model-impl";
 import {EditableBookSourceHandle} from "service-source";
 import {map} from "rxjs/operators";
 import {combineLatest} from "rxjs";
