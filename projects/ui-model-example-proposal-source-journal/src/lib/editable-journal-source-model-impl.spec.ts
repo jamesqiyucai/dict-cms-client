@@ -1,4 +1,4 @@
-import {FakeReviewableJournalSourceHandle} from "../../../ui-model-example-source-journal/src/lib/viewable-journal-source-model-impl.spec";
+import {FakeReviewableJournalSourceHandle} from "../../../ui-model-example-source-journal/src/lib/example-source-journal-model-impl.spec";
 import {EditableJournalSourceModelFactory} from "./editable-journal-source-model-factory";
 import {EditableJournalSourceModelImpl} from "./editable-journal-source-model.impl";
 import {EditableJournalSourceModel} from './editable-journal-source-model';

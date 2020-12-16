@@ -2,8 +2,7 @@
   "name": "service-example-proposal-source-journal",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^10.0.14",
-    "@angular/core": "^10.0.14"
+    "service-example-source-journal": "1.0.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"

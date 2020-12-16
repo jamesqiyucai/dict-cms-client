@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "service-source": ["dist/service-source"]
+    }
+  }
+}

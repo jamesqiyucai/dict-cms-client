@@ -1,7 +1,7 @@
-import {Observable} from "rxjs";
-import {JournalSourceModel} from "../../../ui-model-source/src/lib/journal_source/journal-source-model";
+import {Observable} from 'rxjs';
+import {BaseSourceModel} from 'ui-model-source';
 
-export interface ViewableJournalSourceModel extends JournalSourceModel {
+export interface ExampleSourceJournalModel extends BaseSourceModel {
   readonly author$: Observable<string>;
   readonly journalTitle$: Observable<string>;
   readonly page$: Observable<string>;

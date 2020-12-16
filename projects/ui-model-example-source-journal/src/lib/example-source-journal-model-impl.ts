@@ -1,17 +1,18 @@
-import {ViewableJournalSourceModel} from "./viewable-journal-source-model";
-import {ReviewableJournalSourceHandle, SourceType} from "service-source";
+import {ExampleSourceJournalModel} from './example-source-journal-model';
+import {SourceType} from 'service-source';
 import {BehaviorSubject, of} from 'rxjs';
-import {BaseSourceModelImpl} from "../../../ui-model-source/src/lib/base-source-model-impl";
-import {mergeMap} from "rxjs/operators";
+import {BaseSourceModelImpl} from '../../../ui-model-source/src/lib/base-source-model-impl';
+import {mergeMap} from 'rxjs/operators';
+import {ExampleSourceJournalHandle} from 'service-example-source-journal';
 
-export class ViewableJournalSourceModelImpl extends BaseSourceModelImpl implements ViewableJournalSourceModel {
-  protected _handle: ReviewableJournalSourceHandle;
+export class ExampleSourceJournalModelImpl extends BaseSourceModelImpl implements ExampleSourceJournalModel {
+  protected _handle: ExampleSourceJournalHandle;
   protected _authorBuffer$: BehaviorSubject<string | null>;
   protected _titleBuffer$: BehaviorSubject<string | null>;
   protected _pageBuffer$: BehaviorSubject<string | null>;
   protected _passageTitleBuffer$: BehaviorSubject<string | null>;
   protected _publishDateBuffer$: BehaviorSubject<string | null>;
-  constructor(handle: ReviewableJournalSourceHandle) {
+  constructor(handle: ExampleSourceJournalHandle) {
     super(SourceType.Journal);
     this._handle = handle;
     this._authorBuffer$ = new BehaviorSubject<string | null>(null);
@@ -36,6 +37,4 @@ export class ViewableJournalSourceModelImpl extends BaseSourceModelImpl implemen
   public get page$() {
     return this._pageBuffer$.pipe(mergeMap(page => page != null ? of(page) : this._handle.page$));
   }
-
-
 }

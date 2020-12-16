@@ -1,7 +1,7 @@
 import {ReviewableJournalSourceHandle, SourceType} from "service-source";
 import {BehaviorSubject} from "rxjs";
-import {ViewableJournalSourceModelFactory} from "./viewable-journal-source-model-factory";
-import {ViewableJournalSourceModelImpl} from "./viewable-journal-source-model-impl";
+import {ExampleSourceJournalModelFactory} from "./example-source-journal-model-factory";
+import {ExampleSourceJournalModelImpl} from "./example-source-journal-model-impl";
 import {skip} from "rxjs/operators";
 
 export class FakeReviewableJournalSourceHandle implements ReviewableJournalSourceHandle {
@@ -14,33 +14,33 @@ export class FakeReviewableJournalSourceHandle implements ReviewableJournalSourc
   type = SourceType.Journal;
 }
 
-describe('ViewableJournalSourceModelImpl tests', () => {
+describe('ExampleSourceJournalModelImpl tests', () => {
 
   describe('initialization logic tests including its factory', () => {
     it('should not initialize if given a handle with wrong type', function() {
       const handle = new FakeReviewableJournalSourceHandle();
       handle.type = SourceType.Book;
-      const model = new ViewableJournalSourceModelFactory().createSource(handle);
+      const model = new ExampleSourceJournalModelFactory().createSource(handle);
       expect(model).toBeNull();
     });
     it('should not initialize if given a handle with wrong editable', function() {
       const handle = new FakeReviewableJournalSourceHandle();
       handle.type = SourceType.Journal;
       handle.editable = true;
-      const model = new ViewableJournalSourceModelFactory().createSource(handle);
+      const model = new ExampleSourceJournalModelFactory().createSource(handle);
       expect(model).toBeNull();
     });
     it('should initialize given the right type and editable', function() {
       const handle = new FakeReviewableJournalSourceHandle();
-      const model = new ViewableJournalSourceModelFactory().createSource(handle);
-      expect(model).toBeInstanceOf(ViewableJournalSourceModelImpl);
+      const model = new ExampleSourceJournalModelFactory().createSource(handle);
+      expect(model).toBeInstanceOf(ExampleSourceJournalModelImpl);
     });
   });
 
   describe('type property test', () => {
     it('should have the book type', function() {
       const handle = new FakeReviewableJournalSourceHandle();
-      const model = new ViewableJournalSourceModelFactory().createSource(handle);
+      const model = new ExampleSourceJournalModelFactory().createSource(handle);
       expect(model.type).toEqual(SourceType.Journal);
     });
   });
@@ -48,7 +48,7 @@ describe('ViewableJournalSourceModelImpl tests', () => {
   describe('author$ property test', () => {
     it('should emit all the author$ values emitted from handle', function() {
       const handle = new FakeReviewableJournalSourceHandle();
-      const model = new ViewableJournalSourceModelFactory().createSource(handle);
+      const model = new ExampleSourceJournalModelFactory().createSource(handle);
       let subscription = model.author$.pipe().subscribe(value => expect(value).toEqual(''));
       subscription.unsubscribe();
       subscription = model.author$.pipe(skip(1)).subscribe(value => expect(value).toEqual(''));
@@ -69,7 +69,7 @@ describe('ViewableJournalSourceModelImpl tests', () => {
   describe('journalTitle$ property test', () => {
     it('should emit all the journalTitle$ values emitted from handle', function() {
       const handle = new FakeReviewableJournalSourceHandle();
-      const model = new ViewableJournalSourceModelFactory().createSource(handle);
+      const model = new ExampleSourceJournalModelFactory().createSource(handle);
       let subscription = model.journalTitle$.pipe().subscribe(value => expect(value).toEqual(''));
       subscription.unsubscribe();
       subscription = model.journalTitle$.pipe(skip(1)).subscribe(value => expect(value).toEqual(''));
@@ -90,7 +90,7 @@ describe('ViewableJournalSourceModelImpl tests', () => {
   describe('page$ property test', () => {
     it('should emit all the page$ values emitted from handle', function() {
       const handle = new FakeReviewableJournalSourceHandle();
-      const model = new ViewableJournalSourceModelFactory().createSource(handle);
+      const model = new ExampleSourceJournalModelFactory().createSource(handle);
       let subscription = model.page$.subscribe(value => expect(value).toEqual(''));
       subscription.unsubscribe();
       subscription = model.page$.pipe(skip(1)).subscribe(value => expect(value).toEqual(''));
@@ -111,7 +111,7 @@ describe('ViewableJournalSourceModelImpl tests', () => {
   describe('passageTitle$ property test', () => {
     it('should emit all the passageTitle$ values emitted from handle', function() {
       const handle = new FakeReviewableJournalSourceHandle();
-      const model = new ViewableJournalSourceModelFactory().createSource(handle);
+      const model = new ExampleSourceJournalModelFactory().createSource(handle);
       let subscription = model.passageTitle$.pipe().subscribe(value => expect(value).toEqual(''));
       subscription.unsubscribe();
       subscription = model.passageTitle$.pipe(skip(1)).subscribe(value => expect(value).toEqual(''));
@@ -132,7 +132,7 @@ describe('ViewableJournalSourceModelImpl tests', () => {
   describe('publishDate$ property test', () => {
     it('should emit all the publishDate$ values emitted from handle', function() {
       const handle = new FakeReviewableJournalSourceHandle();
-      const model = new ViewableJournalSourceModelFactory().createSource(handle);
+      const model = new ExampleSourceJournalModelFactory().createSource(handle);
       let subscription = model.publishDate$.pipe().subscribe(value => expect(value).toEqual(''));
       subscription.unsubscribe();
       subscription = model.publishDate$.pipe(skip(1)).subscribe(value => expect(value).toEqual(''));

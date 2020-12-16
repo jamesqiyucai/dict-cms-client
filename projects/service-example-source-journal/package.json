@@ -2,6 +2,7 @@
   "name": "service-example-source-journal",
   "version": "1.0.0",
   "peerDependencies": {
+    "service-source": "1.1.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"

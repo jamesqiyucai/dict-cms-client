@@ -1,10 +1,10 @@
-import {ViewableJournalSourceModelImpl} from "../../../ui-model-example-source-journal/src/lib/viewable-journal-source-model-impl";
+import {ExampleSourceJournalModelImpl} from "../../../ui-model-example-source-journal/src/lib/example-source-journal-model-impl";
 import {EditableJournalSourceModel} from "./editable-journal-source-model";
 import {EditableJournalSourceHandle} from "service-source";
 import {map} from "rxjs/operators";
 import {combineLatest} from "rxjs";
 
-export class EditableJournalSourceModelImpl extends ViewableJournalSourceModelImpl implements EditableJournalSourceModel {
+export class EditableJournalSourceModelImpl extends ExampleSourceJournalModelImpl implements EditableJournalSourceModel {
   protected _handle: EditableJournalSourceHandle;
   constructor(handle: EditableJournalSourceHandle) {
     super(handle);

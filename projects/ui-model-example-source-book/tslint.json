@@ -12,6 +12,8 @@
       "element",
       "lib",
       "kebab-case"
-    ]
+    ],
+    "triple-equals": false,
+    "variable-name": false
   }
 }
