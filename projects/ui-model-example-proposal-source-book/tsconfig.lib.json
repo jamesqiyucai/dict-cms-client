@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
@@ -10,7 +9,33 @@
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "paths": {
+      "ui-model-editable": [
+        "dist/ui-model-editable",
+        "dist/ui-model-editable/ui-model-editable"
+      ],
+      "ui-model-example-source-book": [
+        "dist/ui-model-example-source-book",
+        "dist/ui-model-example-source-book/ui-model-example-source-book"
+      ],
+      "ui-model-source": [
+        "dist/ui-model-source",
+        "dist/ui-model-source/ui-model-source"
+      ],
+      "service-source": [
+        "dist/service-source",
+        "dist/service-source/service-source"
+      ],
+      "service-example-source-book": [
+        "dist/service-example-source-book",
+        "dist/service-example-source-book/service-example-source-book"
+      ],
+      "service-example-proposal-source-book": [
+        "dist/service-example-proposal-source-book",
+        "dist/service-example-proposal-source-book/service-example-proposal-source-book"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,

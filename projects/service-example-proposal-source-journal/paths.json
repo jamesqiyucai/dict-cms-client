@@ -1,0 +1,6 @@
+{
+  "service-example-source-journal": [
+    "dist/service-example-source-journal",
+    "dist/service-example-source-journal/service-example-source-journal"
+  ]
+}

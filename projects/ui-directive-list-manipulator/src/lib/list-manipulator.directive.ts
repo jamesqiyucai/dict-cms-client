@@ -1,4 +1,4 @@
-import { ComponentFactoryResolver, Directive, TemplateRef, ViewContainerRef, OnInit, Input } from '@angular/core';
+import { ComponentFactoryResolver, Directive, TemplateRef, ViewContainerRef, Input } from '@angular/core';
 import { ListManipulatorContainerComponent } from './list-manipulator-container/list-manipulator-container.component';
 
 @Directive({

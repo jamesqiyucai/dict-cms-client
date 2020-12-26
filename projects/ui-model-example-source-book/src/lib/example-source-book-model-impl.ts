@@ -2,7 +2,7 @@ import {ExampleSourceBookModel} from './example-source-book-model';
 import {BaseSourceModelImpl} from 'ui-model-source';
 import {ExampleSourceBookHandle} from 'service-example-source-book';
 import {SourceType} from 'service-source';
-import {BehaviorSubject, of} from 'rxjs';
+import {BehaviorSubject, Observable, of} from 'rxjs';
 import {mergeMap} from 'rxjs/operators';
 
 export class ExampleSourceBookModelImpl extends BaseSourceModelImpl implements ExampleSourceBookModel {
@@ -26,7 +26,7 @@ export class ExampleSourceBookModelImpl extends BaseSourceModelImpl implements E
     this._handle = handle;
   }
 
-  public get author$() {
+  public get author$(): Observable<string> {
     return this._authorBuffer$.asObservable().pipe(
       mergeMap(author => {
         if (author != null) {
@@ -37,7 +37,7 @@ export class ExampleSourceBookModelImpl extends BaseSourceModelImpl implements E
       })
     );
   }
-  public get title$() {
+  public get title$(): Observable<string> {
     return this._titleBuffer$.asObservable().pipe(
       mergeMap(title => {
         if (title != null) {
@@ -48,7 +48,7 @@ export class ExampleSourceBookModelImpl extends BaseSourceModelImpl implements E
       })
     );
   }
-  public get page$() {
+  public get page$(): Observable<string> {
     return this._pageBuffer$.asObservable().pipe(
       mergeMap(page => {
         if (page != null) {
@@ -59,7 +59,7 @@ export class ExampleSourceBookModelImpl extends BaseSourceModelImpl implements E
       })
     );
   }
-  public get initialPublishYear$() {
+  public get initialPublishYear$(): Observable<string> {
     return this._initialPublishingYearBuffer$.asObservable().pipe(
       mergeMap(year => {
         if (year != null) {
@@ -70,7 +70,7 @@ export class ExampleSourceBookModelImpl extends BaseSourceModelImpl implements E
       })
     );
   }
-  public get publishYear$() {
+  public get publishYear$(): Observable<string> {
     return this._publishedYearBuffer$.asObservable().pipe(
       mergeMap(year => {
         if (year != null) {
@@ -81,7 +81,7 @@ export class ExampleSourceBookModelImpl extends BaseSourceModelImpl implements E
       })
     );
   }
-  public get publishPlace$() {
+  public get publishPlace$(): Observable<string> {
     return this._publishedPlaceBuffer$.pipe(
       mergeMap(place => {
         if (place != null) {

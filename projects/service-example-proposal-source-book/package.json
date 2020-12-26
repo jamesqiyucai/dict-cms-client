@@ -2,6 +2,7 @@
   "name": "service-example-proposal-source-book",
   "version": "1.0.0",
   "peerDependencies": {
+    "service-example-source-book": "1.0.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"

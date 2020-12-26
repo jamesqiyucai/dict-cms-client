@@ -2,6 +2,6 @@
  * Public API Surface of ui-model-example-source-book
  */
 
-export * from './lib/ui-model-example-source-book.service';
-export * from './lib/ui-model-example-source-book.component';
-export * from './lib/ui-model-example-source-book.module';
+export {ExampleSourceBookModel} from './lib/example-source-book-model';
+export {ExampleSourceBookModelFactory} from './lib/example-source-book-model-factory';
+export {ExampleSourceBookModelImpl} from './lib/example-source-book-model-impl';
