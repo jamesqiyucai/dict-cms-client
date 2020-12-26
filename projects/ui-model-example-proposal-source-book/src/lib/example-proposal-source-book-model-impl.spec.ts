@@ -1,7 +1,7 @@
 import {FakeReviewableBookSourceHandle} from '../../../ui-model-example-source-book/src/lib/example-source-book-model-impl.spec';
 import {EditableBookSourceHandle, SourceType} from 'service-source';
-import {EditableBookSourceModelFactory} from './editable-book-source-model-factory';
-import {EditableBookSourceModelImpl} from './editable-book-source-model-impl';
+import {ExampleProposalSourceBookModelFactory} from './example-proposal-source-book-model-factory';
+import {ExampleProposalSourceBookModelImpl} from './example-proposal-source-book-model-impl';
 
 export class FakeEditableBookSourceHandle extends FakeReviewableBookSourceHandle implements EditableBookSourceHandle {
   editable = true;
@@ -31,32 +31,32 @@ export class FakeEditableBookSourceHandle extends FakeReviewableBookSourceHandle
 
 }
 
-describe('EditableBookSourceModelImpl tests', () => {
+describe('ExampleProposalSourceBookModelImpl tests', () => {
 
   describe('initialization logic tests including its factory', () => {
     it('should not initialize if given a handle with wrong type', function() {
       const handle = new FakeEditableBookSourceHandle();
       handle.type = SourceType.Journal;
-      const model = new EditableBookSourceModelFactory().createSource(handle);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
       expect(model).toBeNull();
     });
     it('should not initialize if given a handle with wrong editable', function() {
       const handle = new FakeEditableBookSourceHandle();
       handle.type = SourceType.Book;
       handle.editable = false;
-      const model = new EditableBookSourceModelFactory().createSource(handle);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
       expect(model).toBeNull();
     });
     it('should initialize given the right type and editable', function() {
       const handle = new FakeEditableBookSourceHandle();
-      const model = new EditableBookSourceModelFactory().createSource(handle);
-      expect(model).toBeInstanceOf(EditableBookSourceModelImpl);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
+      expect(model).toBeInstanceOf(ExampleProposalSourceBookModelImpl);
     });
   });
 
   describe('set author test', () => {
     const handle = new FakeEditableBookSourceHandle();
-    const model = new EditableBookSourceModelFactory().createSource(handle);
+    const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
 
     it('should emit empty string if user input is empty', function() {
       handle.setAuthor('sherwood');
@@ -74,7 +74,7 @@ describe('EditableBookSourceModelImpl tests', () => {
 
   describe('set title test', () => {
     const handle = new FakeEditableBookSourceHandle();
-    const model = new EditableBookSourceModelFactory().createSource(handle);
+    const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
 
     it('should emit empty string if user input is empty', function() {
       handle.setTitle('sherwood');
@@ -92,7 +92,7 @@ describe('EditableBookSourceModelImpl tests', () => {
 
   describe('set page test', () => {
     const handle = new FakeEditableBookSourceHandle();
-    const model = new EditableBookSourceModelFactory().createSource(handle);
+    const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
 
     it('should emit empty string if user input is empty', function() {
       handle.setPage('sherwood');
@@ -110,7 +110,7 @@ describe('EditableBookSourceModelImpl tests', () => {
 
   describe('set publish place test', () => {
     const handle = new FakeEditableBookSourceHandle();
-    const model = new EditableBookSourceModelFactory().createSource(handle);
+    const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
 
     it('should emit empty string if user input is empty', function() {
       handle.setPublishPlace('sherwood');
@@ -128,7 +128,7 @@ describe('EditableBookSourceModelImpl tests', () => {
 
   describe('set initial publish year test', () => {
     const handle = new FakeEditableBookSourceHandle();
-    const model = new EditableBookSourceModelFactory().createSource(handle);
+    const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
 
     it('should emit empty string if user input is empty', function() {
       handle.setInitialPublishYear('sherwood');
@@ -157,7 +157,7 @@ describe('EditableBookSourceModelImpl tests', () => {
 
   describe('set publish year test', () => {
     const handle = new FakeEditableBookSourceHandle();
-    const model = new EditableBookSourceModelFactory().createSource(handle);
+    const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
 
     it('should emit empty string if user input is empty', function() {
       handle.setPublishYear('sherwood');
@@ -187,12 +187,12 @@ describe('EditableBookSourceModelImpl tests', () => {
   describe('author empty test', () => {
     const handle = new FakeEditableBookSourceHandle();
     it('should emit true if author is empty', function() {
-      const model = new EditableBookSourceModelFactory().createSource(handle);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model.setAuthor('');
       model.authorEmpty.subscribe(value => expect(value).toEqual(true)).unsubscribe();
     });
     it('should emit false if author is not empty', function() {
-      const model2 = new EditableBookSourceModelFactory().createSource(handle);
+      const model2 = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model2.setAuthor('sherwood');
       model2.authorEmpty.subscribe(value => expect(value).toEqual(false)).unsubscribe();
     });
@@ -201,12 +201,12 @@ describe('EditableBookSourceModelImpl tests', () => {
   describe('title empty test', () => {
     const handle = new FakeEditableBookSourceHandle();
     it('should emit true if title is empty', function() {
-      const model = new EditableBookSourceModelFactory().createSource(handle);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model.setTitle('');
       model.titleEmpty.subscribe(value => expect(value).toEqual(true)).unsubscribe();
     });
     it('should emit false if title is not empty', function() {
-      const model2 = new EditableBookSourceModelFactory().createSource(handle);
+      const model2 = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model2.setTitle('sherwood');
       model2.titleEmpty.subscribe(value => expect(value).toEqual(false)).unsubscribe();
     });
@@ -215,12 +215,12 @@ describe('EditableBookSourceModelImpl tests', () => {
   describe('page empty test', () => {
     const handle = new FakeEditableBookSourceHandle();
     it('should emit true if page is empty', function() {
-      const model = new EditableBookSourceModelFactory().createSource(handle);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model.setPage('');
       model.pageEmpty.subscribe(value => expect(value).toEqual(true)).unsubscribe();
     });
     it('should emit false if page is not empty', function() {
-      const model2 = new EditableBookSourceModelFactory().createSource(handle);
+      const model2 = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model2.setPage('sherwood');
       model2.pageEmpty.subscribe(value => expect(value).toEqual(false)).unsubscribe();
     });
@@ -229,12 +229,12 @@ describe('EditableBookSourceModelImpl tests', () => {
   describe('initial publish year empty test', () => {
     const handle = new FakeEditableBookSourceHandle();
     it('should emit true if initial publish year is empty', function() {
-      const model = new EditableBookSourceModelFactory().createSource(handle);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model.setInitialPublishYear('');
       model.initialPublishYearEmpty.subscribe(value => expect(value).toEqual(true)).unsubscribe();
     });
     it('should emit false if initial publish year is not empty', function() {
-      const model2 = new EditableBookSourceModelFactory().createSource(handle);
+      const model2 = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model2.setInitialPublishYear('sherwood');
       model2.initialPublishYearEmpty.subscribe(value => expect(value).toEqual(false)).unsubscribe();
     });
@@ -243,12 +243,12 @@ describe('EditableBookSourceModelImpl tests', () => {
   describe('publish place empty test', () => {
     const handle = new FakeEditableBookSourceHandle();
     it('should emit true if publish place is empty', function() {
-      const model = new EditableBookSourceModelFactory().createSource(handle);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model.setPublishPlace('');
       model.publishPlaceEmpty.subscribe(value => expect(value).toEqual(true)).unsubscribe();
     });
     it('should emit false if publish place is not empty', function() {
-      const model2 = new EditableBookSourceModelFactory().createSource(handle);
+      const model2 = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model2.setPublishPlace('sherwood');
       model2.publishPlaceEmpty.subscribe(value => expect(value).toEqual(false)).unsubscribe();
     });
@@ -257,12 +257,12 @@ describe('EditableBookSourceModelImpl tests', () => {
   describe('publish year empty test', () => {
     const handle = new FakeEditableBookSourceHandle();
     it('should emit true if publish year is empty', function() {
-      const model = new EditableBookSourceModelFactory().createSource(handle);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model.setPublishYear('');
       model.publishYearEmpty.subscribe(value => expect(value).toEqual(true)).unsubscribe();
     });
     it('should emit false if publish year is not empty', function() {
-      const model2 = new EditableBookSourceModelFactory().createSource(handle);
+      const model2 = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model2.setPublishYear('sherwood');
       model2.publishYearEmpty.subscribe(value => expect(value).toEqual(false)).unsubscribe();
     });
@@ -271,12 +271,12 @@ describe('EditableBookSourceModelImpl tests', () => {
   describe('initial publish year in future test', () => {
     const handle = new FakeEditableBookSourceHandle();
     it('should emit true if initial publish year is in future', function() {
-      const model = new EditableBookSourceModelFactory().createSource(handle);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model.setInitialPublishYear('3000');
       model.initialPublishYearInFuture.subscribe(value => expect(value).toEqual(true)).unsubscribe();
     });
     it('should emit false if initial publish year is not in future', function() {
-      const model2 = new EditableBookSourceModelFactory().createSource(handle);
+      const model2 = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model2.setInitialPublishYear('2000');
       model2.initialPublishYearInFuture.subscribe(value => expect(value).toEqual(false)).unsubscribe();
     });
@@ -285,12 +285,12 @@ describe('EditableBookSourceModelImpl tests', () => {
   describe('publish year in future test', () => {
     const handle = new FakeEditableBookSourceHandle();
     it('should emit true if publish year is in future', function() {
-      const model = new EditableBookSourceModelFactory().createSource(handle);
+      const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model.setPublishYear('3000');
       model.publishYearInFuture.subscribe(value => expect(value).toEqual(true)).unsubscribe();
     });
     it('should emit false if publish year is not in future', function() {
-      const model2 = new EditableBookSourceModelFactory().createSource(handle);
+      const model2 = new ExampleProposalSourceBookModelFactory().createSource(handle);
       model2.setPublishYear('2000');
       model2.publishYearInFuture.subscribe(value => expect(value).toEqual(false)).unsubscribe();
     });
@@ -298,7 +298,7 @@ describe('EditableBookSourceModelImpl tests', () => {
 
   describe('validation not pass test', () => {
     const handle = new FakeEditableBookSourceHandle();
-    const model = new EditableBookSourceModelFactory().createSource(handle);
+    const model = new ExampleProposalSourceBookModelFactory().createSource(handle);
 
     const combination = [0, 0, 0, 0, 0, 0, 0, 0];
 

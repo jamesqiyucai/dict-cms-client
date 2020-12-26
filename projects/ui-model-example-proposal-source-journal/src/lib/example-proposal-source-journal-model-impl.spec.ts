@@ -1,8 +1,8 @@
-import {FakeReviewableJournalSourceHandle} from "../../../ui-model-example-source-journal/src/lib/example-source-journal-model-impl.spec";
-import {EditableJournalSourceModelFactory} from "./editable-journal-source-model-factory";
-import {EditableJournalSourceModelImpl} from "./editable-journal-source-model.impl";
-import {EditableJournalSourceModel} from './editable-journal-source-model';
-import {SourceType, EditableJournalSourceHandle} from "service-source";
+import {FakeReviewableJournalSourceHandle} from '../../../ui-model-example-source-journal/src/lib/example-source-journal-model-impl.spec';
+import {EditableJournalSourceModelFactory} from './example-proposal-source-journal-model-factory';
+import {ExampleProposalSourceJournalModelImpl} from './example-proposal-source-journal-model.impl';
+import {ExampleProposalSourceJournalModel} from './example-proposal-source-journal-model';
+import {SourceType} from 'service-source';
 
 export class FakeEditableJournalSourceHandle extends FakeReviewableJournalSourceHandle implements EditableJournalSourceHandle {
   editable = true;
@@ -27,7 +27,7 @@ export class FakeEditableJournalSourceHandle extends FakeReviewableJournalSource
   }
 }
 
-describe('EditableJournalSourceModelImpl tests', () => {
+describe('ExampleProposalSourceJournalModelImpl tests', () => {
 
   describe('initialization logic tests including its factory', () => {
     it('should not initialize if given a handle with wrong type', function() {
@@ -46,7 +46,7 @@ describe('EditableJournalSourceModelImpl tests', () => {
     it('should initialize given the right type and editable', function() {
       const handle = new FakeEditableJournalSourceHandle();
       const model = new EditableJournalSourceModelFactory().createSource(handle);
-      expect(model).toBeInstanceOf(EditableJournalSourceModelImpl);
+      expect(model).toBeInstanceOf(ExampleProposalSourceJournalModelImpl);
     });
   });
 
@@ -114,7 +114,7 @@ describe('EditableJournalSourceModelImpl tests', () => {
 
   describe('validation tests', () => {
     let handle: EditableJournalSourceHandle;
-    let model: EditableJournalSourceModel;
+    let model: ExampleProposalSourceJournalModel;
     beforeEach(() => {
       handle = new FakeEditableJournalSourceHandle();
       model = new EditableJournalSourceModelFactory().createSource(handle);

@@ -17,5 +17,7 @@ node build.js ui-model-example-source-journal
 node build.js ui-model-example-proposal-source-book
 node build.js ui-model-example-proposal-source-journal
 
+node build.js ui-model-example-translation
+
 node build.js ui-directive-editable
 node build.js ui-directive-list-manipulator

@@ -1,7 +1,7 @@
 import {ExampleSourceJournalModel} from './example-source-journal-model';
 import {SourceType} from 'service-source';
 import {BehaviorSubject, of} from 'rxjs';
-import {BaseSourceModelImpl} from '../../../ui-model-source/src/lib/base-source-model-impl';
+import {BaseSourceModelImpl} from 'ui-model-source';
 import {mergeMap} from 'rxjs/operators';
 import {ExampleSourceJournalHandle} from 'service-example-source-journal';
 

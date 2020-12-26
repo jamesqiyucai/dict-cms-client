@@ -1,8 +1,8 @@
-import {ExampleSourceJournalModel} from "../../../ui-model-example-source-journal/src/lib/example-source-journal-model";
-import {Editable} from "ui-model-editable";
-import {Observable} from "rxjs";
+import {ExampleSourceJournalModel} from 'ui-model-example-source-journal';
+import {Editable} from 'ui-model-editable';
+import {Observable} from 'rxjs';
 
-export interface EditableJournalSourceModel extends Editable, ExampleSourceJournalModel {
+export interface ExampleProposalSourceJournalModel extends Editable, ExampleSourceJournalModel {
   readonly authorEmpty: Observable<boolean>;
   readonly journalTitleEmpty: Observable<boolean>;
   readonly pageEmpty: Observable<boolean>;

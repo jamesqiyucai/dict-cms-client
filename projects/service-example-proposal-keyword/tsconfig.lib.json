@@ -12,9 +12,10 @@
     ],
     "paths": {
       "service-example-keyword": [
-        "dist/service-example-keyword"
+        "dist/service-example-keyword",
+        "dist/service-example-keyword/service-example-keyword"
       ]
-    },
+    }
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,

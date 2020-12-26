@@ -12,7 +12,12 @@
     ],
     "paths": {
       "service-example-source-journal": [
-        "dist/service-example-source-journal"
+        "dist/service-example-source-journal",
+        "dist/service-example-source-journal/service-example-source-journal"
+      ],
+      "service-source": [
+        "dist/service-source",
+        "dist/service-source/service-source"
       ]
     }
   },

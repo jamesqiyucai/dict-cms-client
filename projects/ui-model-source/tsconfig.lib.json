@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
@@ -13,10 +12,12 @@
     ],
     "paths": {
       "service-source": [
-        "dist/service-source"
+        "dist/service-source",
+        "dist/service-source/service-source"
       ],
       "ui-model-editable": [
-        "dist/ui-model-editable"
+        "dist/ui-model-editable",
+        "dist/ui-model-editable/ui-model-editable"
       ]
     }
   },

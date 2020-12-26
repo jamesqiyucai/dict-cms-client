@@ -1,12 +1,12 @@
-import {ExampleSourceJournalModelImpl} from "../../../ui-model-example-source-journal/src/lib/example-source-journal-model-impl";
-import {EditableJournalSourceModel} from "./editable-journal-source-model";
-import {EditableJournalSourceHandle} from "service-source";
-import {map} from "rxjs/operators";
-import {combineLatest} from "rxjs";
+import {ExampleSourceJournalModelImpl} from 'ui-model-example-source-journal';
+import {ExampleProposalSourceJournalModel} from './example-proposal-source-journal-model';
+import {ExampleProposalSourceJournalHandle} from 'service-example-proposal-source-journal';
+import {map} from 'rxjs/operators';
+import {combineLatest} from 'rxjs';
 
-export class EditableJournalSourceModelImpl extends ExampleSourceJournalModelImpl implements EditableJournalSourceModel {
-  protected _handle: EditableJournalSourceHandle;
-  constructor(handle: EditableJournalSourceHandle) {
+export class ExampleProposalSourceJournalModelImpl extends ExampleSourceJournalModelImpl implements ExampleProposalSourceJournalModel {
+  protected _handle: ExampleProposalSourceJournalHandle;
+  constructor(handle: ExampleProposalSourceJournalHandle) {
     super(handle);
   }
 

@@ -12,7 +12,8 @@
     ],
     "paths": {
       "service-example-translation": [
-        "dist/service-example-translation"
+        "dist/service-example-translation",
+        "dist/service-example-translation/service-example-translation"
       ]
     }
   },

@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy, TemplateRef, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, TemplateRef, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-list-manipulator-container',

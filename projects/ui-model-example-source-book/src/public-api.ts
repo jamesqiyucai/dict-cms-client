@@ -4,3 +4,4 @@
 
 export {ExampleSourceBookModel} from './lib/example-source-book-model';
 export {ExampleSourceBookModelFactory} from './lib/example-source-book-model-factory';
+export {ExampleSourceBookModelImpl} from './lib/example-source-book-model-impl';

@@ -12,7 +12,8 @@
     ],
     "paths": {
       "service-source": [
-        "dist/service-source"
+        "dist/service-source",
+        "dist/service-source/service-source"
       ]
     }
   },

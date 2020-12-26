@@ -11,9 +11,13 @@
       "es2018"
     ],
     "paths": {
-      "service-source": ["dist/service-source"],
+      "service-source": [
+        "dist/service-source",
+        "dist/service-source/service-source"
+      ],
       "service-example-source-book": [
-        "dist/service-example-source-book"
+        "dist/service-example-source-book",
+        "dist/service-example-source-book/service-example-source-book"
       ]
     }
   },

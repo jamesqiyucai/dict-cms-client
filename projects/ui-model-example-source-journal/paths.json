@@ -1,0 +1,14 @@
+{
+  "service-source": [
+    "dist/service-source",
+    "dist/service-source/service-source"
+  ],
+  "service-example-source-journal": [
+    "dist/service-example-source-journal",
+    "dist/service-example-source-journal/service-example-source-journal"
+  ],
+  "ui-model-source": [
+    "dist/ui-model-source",
+    "dist/ui-model-source/ui-model-source"
+  ]
+}

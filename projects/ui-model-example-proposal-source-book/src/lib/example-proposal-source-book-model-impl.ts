@@ -1,12 +1,12 @@
-import {EditableBookSourceModel} from "../../../ui-model-source/src/public-api";
-import {ViewableBookSourceModelImpl} from "../../../ui-model-example-source-book/src/lib/example-source-book-model-impl";
-import {EditableBookSourceHandle} from "service-source";
-import {map} from "rxjs/operators";
-import {combineLatest} from "rxjs";
+import {map} from 'rxjs/operators';
+import {combineLatest} from 'rxjs';
+import {ExampleProposalSourceBookModel} from './example-proposal-source-book-model';
+import {ExampleProposalSourceBookHandle} from 'service-example-proposal-source-book';
+import {ExampleSourceBookModelImpl} from 'ui-model-example-source-book';
 
-export class EditableBookSourceModelImpl extends ViewableBookSourceModelImpl implements EditableBookSourceModel {
-  protected _handle: EditableBookSourceHandle;
-  constructor(handle: EditableBookSourceHandle) {
+export class ExampleProposalSourceBookModelImpl extends ExampleSourceBookModelImpl implements ExampleProposalSourceBookModel {
+  protected _handle: ExampleProposalSourceBookHandle;
+  constructor(handle: ExampleProposalSourceBookHandle) {
     super(handle);
   }
   public get authorEmpty() {

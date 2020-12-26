@@ -31,7 +31,7 @@ if (fs.existsSync(exportConfigDir)) {
   for (const path in exportConfig) {
     takeAndTracePath(path, exportConfig[path]);
   }
-  fs.writeFileSync(configDir, JSON.stringify(config, null, 1));
+  fs.writeFileSync(configDir, JSON.stringify(config, null, 2));
 }
 
 const buildCommand = "ng build " + packageName + " --prod=true";

@@ -1,8 +1,8 @@
-import {ViewableBookSourceModel} from "../../../ui-model-example-source-book/src/lib/example-source-book-model";
-import {Editable} from "ui-model-editable";
-import {Observable} from "rxjs";
+import {ExampleSourceBookModel} from 'ui-model-example-source-book';
+import {Editable} from 'ui-model-editable';
+import {Observable} from 'rxjs';
 
-export interface EditableBookSourceModel extends Editable, ViewableBookSourceModel {
+export interface ExampleProposalSourceBookModel extends Editable, ExampleSourceBookModel {
   readonly authorEmpty: Observable<boolean>;
   readonly titleEmpty: Observable<boolean>;
   readonly pageEmpty: Observable<boolean>;
