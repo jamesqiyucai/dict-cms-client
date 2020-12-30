@@ -15,8 +15,6 @@
       "es2018",
       "dom"
     ],
-    "paths": {
-
-    }
-  }
+  },
+  "strict": true
 }

@@ -2,5 +2,9 @@
   "ui-model-example-keyword": [
     "dist/ui-model-example-keyword",
     "dist/ui-model-example-keyword/ui-model-example-keyword"
+  ],
+  "service-example-proposal-keyword": [
+    "dist/service-example-proposal-keyword",
+    "dist/service-example-proposal-keyword/service-example-proposal-keyword"
   ]
 }

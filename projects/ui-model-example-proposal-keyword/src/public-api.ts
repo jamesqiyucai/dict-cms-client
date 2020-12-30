@@ -1,7 +1,3 @@
-/*
- * Public API Surface of ui-model-example-proposal-keyword
- */
+import { ExampleProposalKeywordModel } from './lib/example-proposal-keyword-model';
 
-export * from './lib/ui-model-example-proposal-keyword.service';
-export * from './lib/ui-model-example-proposal-keyword.component';
-export * from './lib/ui-model-example-proposal-keyword.module';
+export {ExampleProposalKeywordModel} from './lib/example-proposal-keyword-model';

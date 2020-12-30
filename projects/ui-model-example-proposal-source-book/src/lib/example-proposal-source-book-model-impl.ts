@@ -1,52 +1,52 @@
 import {map} from 'rxjs/operators';
-import {combineLatest} from 'rxjs';
 import {ExampleProposalSourceBookModel} from './example-proposal-source-book-model';
 import {ExampleProposalSourceBookHandle} from 'service-example-proposal-source-book';
 import {ExampleSourceBookModelImpl} from 'ui-model-example-source-book';
+import {combineLatest} from 'rxjs';
 
 export class ExampleProposalSourceBookModelImpl extends ExampleSourceBookModelImpl implements ExampleProposalSourceBookModel {
   protected _handle: ExampleProposalSourceBookHandle;
   constructor(handle: ExampleProposalSourceBookHandle) {
     super(handle);
   }
-  public get authorEmpty() {
+  public get authorEmpty$() {
     return this.author$.pipe(map(author => !author));
   }
-  public get titleEmpty() {
+  public get titleEmpty$() {
     return this.title$.pipe(map(title => !title));
   }
-  public get pageEmpty() {
+  public get pageEmpty$() {
     return this.page$.pipe(map(page => !page));
   }
-  public get initialPublishYearEmpty() {
+  public get initialPublishYearEmpty$() {
     return this.initialPublishYear$.pipe(map(year => !year));
   }
-  public get initialPublishYearInFuture() {
+  public get initialPublishYearInFuture$() {
     return this.initialPublishYear$.pipe(map(year => {
       return parseInt(year, 10) > new Date().getFullYear();
     }));
   }
-  public get publishPlaceEmpty() {
+  public get publishPlaceEmpty$() {
     return this.publishPlace$.pipe(map(place => !place));
   }
-  public get publishYearEmpty() {
+  public get publishYearEmpty$() {
     return this.publishYear$.pipe(map(year => !year));
   }
-  public get publishYearInFuture() {
+  public get publishYearInFuture$() {
     return this.publishYear$.pipe(map(year => {
       return parseInt(year, 10) > new Date().getFullYear();
     }));
   }
-  public get validationNotPass() {
+  public get validationFail$() {
     return combineLatest([
-      this.authorEmpty,
-      this.titleEmpty,
-      this.pageEmpty,
-      this.initialPublishYearEmpty,
-      this.initialPublishYearInFuture,
-      this.publishPlaceEmpty,
-      this.publishYearEmpty,
-      this.publishYearInFuture,
+      this.authorEmpty$,
+      this.titleEmpty$,
+      this.pageEmpty$,
+      this.initialPublishYearEmpty$,
+      this.initialPublishYearInFuture$,
+      this.publishPlaceEmpty$,
+      this.publishYearEmpty$,
+      this.publishYearInFuture$,
     ]).pipe(map(validators => {
       return validators.includes(true);
     }));

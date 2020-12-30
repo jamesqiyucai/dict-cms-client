@@ -1,7 +1,3 @@
-/*
- * Public API Surface of ui-model-example-translation
- */
-
-export * from './lib/ui-model-example-translation.service';
-export * from './lib/ui-model-example-translation.component';
-export * from './lib/ui-model-example-translation.module';
+export {ExampleTranslationModel} from './lib/example-translation-model';
+export {ExampleTranslationModelImpl} from './lib/example-translation-model-impl';
+export {ExampleTranslationModelFactory} from './lib/example-translation-model-factory';

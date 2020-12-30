@@ -1,0 +1,10 @@
+{
+  "ui-model-example-translation": [
+    "dist/ui-model-example-translation",
+    "dist/ui-model-example-translation/ui-model-example-translation"
+  ],
+  "service-example-proposal-translation": [
+    "dist/service-example-proposal-translation",
+    "dist/service-example-proposal-translation/service-example-proposal-translation"
+  ]
+}

@@ -57,38 +57,38 @@ export class ExampleProposalSourceJournalModelImpl extends ExampleSourceJournalM
     }
   }
 
-  get authorEmpty() {
+  get authorEmpty$() {
     return this.author$.pipe(map(author => !author));
   }
 
-  get journalTitleEmpty() {
+  get journalTitleEmpty$() {
     return this.journalTitle$.pipe(map(title => !title));
   }
 
-  get pageEmpty() {
+  get pageEmpty$() {
     return this.page$.pipe(map(page => !page));
   }
 
-  get passageTitleEmpty() {
+  get passageTitleEmpty$() {
     return this.passageTitle$.pipe(map(title => !title));
   }
 
-  get publishDateEmpty() {
+  get publishDateEmpty$() {
     return this.publishDate$.pipe(map(date => !date));
   }
 
-  get publishDateInFuture() {
+  get publishDateInFuture$() {
     return this.publishDate$.pipe(map(date => new Date(date) > new Date()));
   }
 
-  get validationNotPass() {
+  get validationFail$() {
     return combineLatest([
-      this.authorEmpty,
-      this.journalTitleEmpty,
-      this.pageEmpty,
-      this.passageTitleEmpty,
-      this.publishDateEmpty,
-      this.publishDateInFuture
+      this.authorEmpty$,
+      this.journalTitleEmpty$,
+      this.pageEmpty$,
+      this.passageTitleEmpty$,
+      this.publishDateEmpty$,
+      this.publishDateInFuture$
     ]).pipe(map(validators => {
       return validators.includes(true);
     }));

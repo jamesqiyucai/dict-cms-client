@@ -1,22 +1,26 @@
+import {mergeMap} from 'rxjs/operators';
+import {BehaviorSubject, Observable, of} from 'rxjs';
 import {ExampleKeywordModel} from './example-keyword-model';
-import {BehaviorSubject} from 'rxjs';
 import {ExampleKeywordHandle} from 'service-example-keyword';
 
 export class ExampleKeywordModelImpl implements ExampleKeywordModel {
-  protected _text: string;
-  protected _text$: BehaviorSubject<string>;
-  private readonly _handle?: ExampleKeywordHandle;
-  constructor(handle?: ExampleKeywordHandle) {
-    this._text = '';
-    this._text$ = new BehaviorSubject<string>('');
-    if (handle) {
-      this._handle = handle;
-    }
-  }
-  public get text$() {
-    return this._text$.asObservable();
-  }
-  public set text(newText: string) {
 
+  protected readonly _handle: ExampleKeywordHandle;
+  protected readonly _textBuffer$: BehaviorSubject<string>;
+
+  constructor(handle: ExampleKeywordHandle) {
+    this._handle = handle;
+    this._textBuffer$ = new BehaviorSubject<string>(null);
+  }
+  public get text$(): Observable<string> {
+    return this._textBuffer$.asObservable().pipe(
+      mergeMap(text => {
+        if (text != null) {
+          return of(text);
+        } else {
+          return this._handle.keyword$;
+        }
+      })
+    );
   }
 }

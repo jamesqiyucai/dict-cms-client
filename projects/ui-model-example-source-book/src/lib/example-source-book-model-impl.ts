@@ -9,11 +9,11 @@ export class ExampleSourceBookModelImpl extends BaseSourceModelImpl implements E
 
   protected _handle: ExampleSourceBookHandle;
   protected readonly _authorBuffer$: BehaviorSubject<string | null>;
-  protected readonly _titleBuffer$: BehaviorSubject<string>;
-  protected readonly _pageBuffer$: BehaviorSubject<string>;
-  protected readonly _initialPublishingYearBuffer$: BehaviorSubject<string>;
-  protected readonly _publishedYearBuffer$: BehaviorSubject<string>;
-  protected readonly _publishedPlaceBuffer$: BehaviorSubject<string>;
+  protected readonly _titleBuffer$: BehaviorSubject<string | null>;
+  protected readonly _pageBuffer$: BehaviorSubject<string | null>;
+  protected readonly _initialPublishingYearBuffer$: BehaviorSubject<string | null>;
+  protected readonly _publishedYearBuffer$: BehaviorSubject<string | null>;
+  protected readonly _publishedPlaceBuffer$: BehaviorSubject<string | null>;
 
   constructor(handle: ExampleSourceBookHandle) {
     super(SourceType.Book);

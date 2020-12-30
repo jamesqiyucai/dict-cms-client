@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
@@ -10,7 +9,21 @@
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "paths": {
+      "ui-model-example-translation": [
+        "dist/ui-model-example-translation",
+        "dist/ui-model-example-translation/ui-model-example-translation"
+      ],
+      "service-example-translation": [
+        "dist/service-example-translation",
+        "dist/service-example-translation/service-example-translation"
+      ],
+      "service-example-proposal-translation": [
+        "dist/service-example-proposal-translation",
+        "dist/service-example-proposal-translation/service-example-proposal-translation"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,

@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
@@ -10,7 +9,13 @@
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "paths": {
+      "service-example-keyword": [
+        "dist/service-example-keyword",
+        "dist/service-example-keyword/service-example-keyword"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,
