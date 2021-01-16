@@ -210,6 +210,18 @@
     },
     {
       "path": "./projects/ui-model-example-proposal-keyword/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal/tsconfig.spec.json"
     }
   ]
 }

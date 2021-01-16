@@ -9,7 +9,7 @@ function isExampleSourceBookHandle(handle: unknown): handle is ExampleSourceBook
 }
 
 export class ExampleSourceBookModelFactoryImpl implements SourceFactory {
-  createSource(handle: unknown): ExampleSourceBookModel | null {
+  getSource(handle: unknown): ExampleSourceBookModel | null {
     if (isExampleSourceBookHandle(handle)) {
       return new ExampleSourceBookModelImpl(handle);
     } else {

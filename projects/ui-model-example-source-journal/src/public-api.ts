@@ -3,5 +3,5 @@
  */
 
 export {ExampleSourceJournalModel} from './lib/example-source-journal-model';
-export {ExampleSourceJournalModelFactory} from './lib/example-source-journal-model-factory';
+export {ExampleSourceJournalModelFactoryImpl as ExampleSourceJournalModelFactory} from './lib/example-source-journal-model-factory-impl';
 export {ExampleSourceJournalModelImpl} from './lib/example-source-journal-model-impl';

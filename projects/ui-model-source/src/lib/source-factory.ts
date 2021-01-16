@@ -1,5 +1,6 @@
+import {SourceHandle} from 'service-source';
 import {BaseSourceModel} from "./base-source-model";
 
 export interface SourceFactory {
-  createSource(handle: unknown): BaseSourceModel | null;
+  getSource(handle: SourceHandle): BaseSourceModel | null;
 }

@@ -15,6 +15,16 @@
       "es2018",
       "dom"
     ],
+    "paths": {
+      "ui-model-example": [
+        "dist/ui-model-example/ui-model-example",
+        "dist/ui-model-example"
+      ],
+      "ui-model-example-proposal": [
+        "dist/ui-model-example-proposal/ui-model-example-proposal",
+        "dist/ui-model-example-proposal"
+      ]
+    }
   },
   "strict": true
 }
