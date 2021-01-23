@@ -1581,6 +1581,86 @@
           }
         }
       }
+    },
+    "ui-model-keywords": {
+      "projectType": "library",
+      "root": "projects/ui-model-keywords",
+      "sourceRoot": "projects/ui-model-keywords/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-keywords/tsconfig.lib.json",
+            "project": "projects/ui-model-keywords/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-keywords/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-keywords/src/test.ts",
+            "tsConfig": "projects/ui-model-keywords/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-keywords/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-keywords/tsconfig.lib.json",
+              "projects/ui-model-keywords/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-list-example-proposal-keyword": {
+      "projectType": "library",
+      "root": "projects/ui-model-list-example-proposal-keyword",
+      "sourceRoot": "projects/ui-model-list-example-proposal-keyword/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-list-example-proposal-keyword/tsconfig.lib.json",
+            "project": "projects/ui-model-list-example-proposal-keyword/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-list-example-proposal-keyword/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-list-example-proposal-keyword/src/test.ts",
+            "tsConfig": "projects/ui-model-list-example-proposal-keyword/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-list-example-proposal-keyword/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-list-example-proposal-keyword/tsconfig.lib.json",
+              "projects/ui-model-list-example-proposal-keyword/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "client-entry",

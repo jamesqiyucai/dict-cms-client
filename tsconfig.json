@@ -222,6 +222,18 @@
     },
     {
       "path": "./projects/ui-model-example-proposal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-keywords/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-keywords/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-list-example-proposal-keyword/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-list-example-proposal-keyword/tsconfig.spec.json"
     }
   ]
 }

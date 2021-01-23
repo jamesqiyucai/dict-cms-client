@@ -1,0 +1,6 @@
+{
+  "service-example": [
+    "dist/service-example",
+    "dist/service-example/service-example"
+  ]
+}

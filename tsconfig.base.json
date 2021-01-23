@@ -23,6 +23,14 @@
       "ui-model-example-proposal": [
         "dist/ui-model-example-proposal/ui-model-example-proposal",
         "dist/ui-model-example-proposal"
+      ],
+      "ui-model-keywords": [
+        "dist/ui-model-keywords/ui-model-keywords",
+        "dist/ui-model-keywords"
+      ],
+      "ui-model-list-example-proposal-keyword": [
+        "dist/ui-model-list-example-proposal-keyword/ui-model-list-example-proposal-keyword",
+        "dist/ui-model-list-example-proposal-keyword"
       ]
     }
   },

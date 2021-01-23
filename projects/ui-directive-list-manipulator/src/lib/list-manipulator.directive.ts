@@ -1,3 +1,4 @@
+import {ListManipulatorModel} from './list-manipulator-model';
 import { ComponentFactoryResolver, Directive, TemplateRef, ViewContainerRef, Input } from '@angular/core';
 import { ListManipulatorContainerComponent } from './list-manipulator-container/list-manipulator-container.component';
 
@@ -12,11 +13,11 @@ export class ListManipulatorDirective {
     private componentFactoryResolver: ComponentFactoryResolver
   ) { }
 
-  @Input() public set models(elementModels: any[]) {
+  @Input() public set models(manipulatorModel: ListManipulatorModel) {
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(ListManipulatorContainerComponent);
     const containerComponentRef = this.viewContainerRef.createComponent<ListManipulatorContainerComponent>(componentFactory);
     containerComponentRef.instance.data = this.templateRef;
-    containerComponentRef.instance.model = elementModels;
+    containerComponentRef.instance.model = manipulatorModel;
   }
 
 }

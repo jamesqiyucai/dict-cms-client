@@ -1,9 +1,10 @@
-<div cdkDropList>
+<div cdkDropList (cdkDropListDropped)="drop($event)">
   <lib-list-manipulator-element-generator
-    *ngFor="let elementModel of elementModels"
+    *ngFor="let elementModel of elementModels | async"
     cdkDrag
     [elementTemplate]="elementTemplate"
     [elementModel]="elementModel"
   >
   </lib-list-manipulator-element-generator>
+  <button (click)="add()">Add</button>
 </div>
