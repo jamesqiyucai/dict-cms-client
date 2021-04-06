@@ -1,0 +1,6 @@
+{
+  "ui-component-source-base": [
+    "dist/ui-component-source-base",
+    "dist/ui-component-source-base/ui-component-source-base"
+  ]
+}

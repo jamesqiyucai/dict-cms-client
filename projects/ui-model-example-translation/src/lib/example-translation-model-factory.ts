@@ -1,6 +1,6 @@
-import {ExampleTranslationModel} from './example-translation-model';
-import {ExampleTranslationHandle} from 'service-example-translation';
+import {ExampleTranslationModel} from 'ui-component-example-translation';
+import {ExampleTranslationDataModel} from './example-translation-data-model';
 
 export interface ExampleTranslationModelFactory {
-  getExampleTranslationModel(handle: ExampleTranslationHandle): ExampleTranslationModel;
+  getExampleTranslationModel(handle: ExampleTranslationDataModel): ExampleTranslationModel;
 }

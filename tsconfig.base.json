@@ -31,6 +31,106 @@
       "ui-model-list-example-proposal-keyword": [
         "dist/ui-model-list-example-proposal-keyword/ui-model-list-example-proposal-keyword",
         "dist/ui-model-list-example-proposal-keyword"
+      ],
+      "ui-model-list-example-proposal-translation": [
+        "dist/ui-model-list-example-proposal-translation/ui-model-list-example-proposal-translation",
+        "dist/ui-model-list-example-proposal-translation"
+      ],
+      "ui-component-example-proposal-source-book": [
+        "dist/ui-component-example-proposal-source-book/ui-component-example-proposal-source-book",
+        "dist/ui-component-example-proposal-source-book"
+      ],
+      "ui-component-example-proposal-source-journal": [
+        "dist/ui-component-example-proposal-source-journal/ui-component-example-proposal-source-journal",
+        "dist/ui-component-example-proposal-source-journal"
+      ],
+      "ui-component-example-proposal-translation": [
+        "dist/ui-component-example-proposal-translation/ui-component-example-proposal-translation",
+        "dist/ui-component-example-proposal-translation"
+      ],
+      "ui-component-example-proposal-keyword": [
+        "dist/ui-component-example-proposal-keyword/ui-component-example-proposal-keyword",
+        "dist/ui-component-example-proposal-keyword"
+      ],
+      "ui-component-example-translation": [
+        "dist/ui-component-example-translation/ui-component-example-translation",
+        "dist/ui-component-example-translation"
+      ],
+      "ui-model-list-example-proposal-translation-default-impl": [
+        "dist/ui-model-list-example-proposal-translation-default-impl/ui-model-list-example-proposal-translation-default-impl",
+        "dist/ui-model-list-example-proposal-translation-default-impl"
+      ],
+      "ui-model-list-example-proposal-keyword-default-impl": [
+        "dist/ui-model-list-example-proposal-keyword-default-impl/ui-model-list-example-proposal-keyword-default-impl",
+        "dist/ui-model-list-example-proposal-keyword-default-impl"
+      ],
+      "ui-component-example-keyword": [
+        "dist/ui-component-example-keyword/ui-component-example-keyword",
+        "dist/ui-component-example-keyword"
+      ],
+      "ui-model-example-keyword-default-impl": [
+        "dist/ui-model-example-keyword-default-impl/ui-model-example-keyword-default-impl",
+        "dist/ui-model-example-keyword-default-impl"
+      ],
+      "ui-model-example-translation-default-impl": [
+        "dist/ui-model-example-translation-default-impl/ui-model-example-translation-default-impl",
+        "dist/ui-model-example-translation-default-impl"
+      ],
+      "ui-model-example-proposal-keyword-default-impl": [
+        "dist/ui-model-example-proposal-keyword-default-impl/ui-model-example-proposal-keyword-default-impl",
+        "dist/ui-model-example-proposal-keyword-default-impl"
+      ],
+      "ui-model-example-proposal-translation-default-impl": [
+        "dist/ui-model-example-proposal-translation-default-impl/ui-model-example-proposal-translation-default-impl",
+        "dist/ui-model-example-proposal-translation-default-impl"
+      ],
+      "ui-component-example-source-journal": [
+        "dist/ui-component-example-source-journal/ui-component-example-source-journal",
+        "dist/ui-component-example-source-journal"
+      ],
+      "ui-component-example-source-book": [
+        "dist/ui-component-example-source-book/ui-component-example-source-book",
+        "dist/ui-component-example-source-book"
+      ],
+      "ui-model-example-source-book-default-impl": [
+        "dist/ui-model-example-source-book-default-impl/ui-model-example-source-book-default-impl",
+        "dist/ui-model-example-source-book-default-impl"
+      ],
+      "ui-model-example-source-journal-default-impl": [
+        "dist/ui-model-example-source-journal-default-impl/ui-model-example-source-journal-default-impl",
+        "dist/ui-model-example-source-journal-default-impl"
+      ],
+      "ui-model-example-proposal-source-book-default-impl": [
+        "dist/ui-model-example-proposal-source-book-default-impl/ui-model-example-proposal-source-book-default-impl",
+        "dist/ui-model-example-proposal-source-book-default-impl"
+      ],
+      "ui-model-example-proposal-source-journal-default-impl": [
+        "dist/ui-model-example-proposal-source-journal-default-impl/ui-model-example-proposal-source-journal-default-impl",
+        "dist/ui-model-example-proposal-source-journal-default-impl"
+      ],
+      "ui-component-source-base": [
+        "dist/ui-component-source-base/ui-component-source-base",
+        "dist/ui-component-source-base"
+      ],
+      "ui-model-source-base": [
+        "dist/ui-model-source-base/ui-model-source-base",
+        "dist/ui-model-source-base"
+      ],
+      "ui-model-source-base-default-impl": [
+        "dist/ui-model-source-base-default-impl/ui-model-source-base-default-impl",
+        "dist/ui-model-source-base-default-impl"
+      ],
+      "ui-model-source-type": [
+        "dist/ui-model-source-type/ui-model-source-type",
+        "dist/ui-model-source-type"
+      ],
+      "ui-component-example-proposal": [
+        "dist/ui-component-example-proposal/ui-component-example-proposal",
+        "dist/ui-component-example-proposal"
+      ],
+      "ui-component-example": [
+        "dist/ui-component-example/ui-component-example",
+        "dist/ui-component-example"
       ]
     }
   },

@@ -1,10 +1,14 @@
-<div cdkDropList (cdkDropListDropped)="drop($event)">
-  <lib-list-manipulator-element-generator
-    *ngFor="let elementModel of elementModels | async"
+<div cdkDropList (cdkDropListDropped)="drop($event)" [cdkDropListDisabled]="draggingDisabled">
+  <div
+    *ngFor="let elementModel of elementModels | async; index as i"
     cdkDrag
-    [elementTemplate]="elementTemplate"
-    [elementModel]="elementModel"
   >
-  </lib-list-manipulator-element-generator>
+    <lib-list-manipulator-element-generator
+      [elementTemplate]="elementTemplate"
+      [elementModel]="elementModel"
+    >
+    </lib-list-manipulator-element-generator>
+    <button (click)="remove(i)"></button>
+  </div>
   <button (click)="add()">Add</button>
 </div>

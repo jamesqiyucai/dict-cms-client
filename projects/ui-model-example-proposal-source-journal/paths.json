@@ -1,22 +1,14 @@
 {
-  "service-source": [
-    "dist/service-source",
-    "dist/service-source/service-source"
-  ],
-  "service-example-proposal-source-journal": [
-    "dist/service-example-proposal-source-journal",
-    "dist/service-example-proposal-source-journal/service-example-proposal-source-journal"
-  ],
-  "ui-model-editable": [
-    "dist/ui-model-editable",
-    "dist/ui-model-editable/ui-model-editable"
-  ],
-  "ui-model-source": [
-    "dist/ui-model-source",
-    "dist/ui-model-source/ui-model-source"
-  ],
   "ui-model-example-source-journal": [
     "dist/ui-model-example-source-journal",
     "dist/ui-model-example-source-journal/ui-model-example-source-journal"
+  ],
+  "ui-component-example-proposal-source-journal": [
+    "dist/ui-component-example-proposal-source-journal",
+    "dist/ui-component-example-proposal-source-journal/ui-component-example-proposal-source-journal"
+  ],
+  "ui-model-source-base": [
+    "dist/ui-model-source-base",
+    "dist/ui-model-source-base/ui-model-source-base"
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "ui-component-example": [
+    "dist/ui-component-example",
+    "dist/ui-component-example/ui-component-example"
+  ]
+}

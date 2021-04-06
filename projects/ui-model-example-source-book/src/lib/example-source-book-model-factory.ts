@@ -1,7 +1,7 @@
-import {ExampleSourceBookModel} from './example-source-book-model';
-import {ExampleSourceBookHandle} from 'service-example-source-book';
-import {SourceFactory} from 'ui-model-source';
+import {ExampleSourceBookModel} from 'ui-component-example-source-book';
+import {SourceFactory} from 'ui-model-source-base';
+import {ExampleSourceBookDataModel} from './example-source-book-data-model';
 
 export interface ExampleSourceBookModelFactory extends SourceFactory {
-  getSource(handle: ExampleSourceBookHandle): ExampleSourceBookModel;
+  getSource(handle: ExampleSourceBookDataModel): ExampleSourceBookModel;
 }

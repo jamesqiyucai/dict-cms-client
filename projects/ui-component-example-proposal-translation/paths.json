@@ -1,0 +1,10 @@
+{
+  "ui-component-example-translation": [
+    "dist/ui-component-example-translation",
+    "dist/ui-component-example-translation/ui-component-example-translation"
+  ],
+  "ui-model-editable": [
+    "dist/ui-model-editable",
+    "dist/ui-model-editable/ui-model-editable"
+  ]
+}

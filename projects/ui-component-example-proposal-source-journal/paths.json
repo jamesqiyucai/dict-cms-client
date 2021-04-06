@@ -1,0 +1,10 @@
+{
+  "ui-component-example-source-journal": [
+    "dist/ui-component-example-source-journal",
+    "dist/ui-component-example-source-journal/ui-model-example-source-journal"
+  ],
+  "ui-model-editable": [
+    "dist/ui-model-editable",
+    "dist/ui-model-editable/ui-model-editable"
+  ]
+}

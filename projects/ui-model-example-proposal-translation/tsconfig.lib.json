@@ -15,13 +15,17 @@
         "dist/ui-model-example-translation",
         "dist/ui-model-example-translation/ui-model-example-translation"
       ],
-      "service-example-translation": [
-        "dist/service-example-translation",
-        "dist/service-example-translation/service-example-translation"
+      "ui-component-example-translation": [
+        "dist/ui-component-example-translation",
+        "dist/ui-component-example-translation/ui-component-example-translation"
       ],
-      "service-example-proposal-translation": [
-        "dist/service-example-proposal-translation",
-        "dist/service-example-proposal-translation/service-example-proposal-translation"
+      "ui-component-example-proposal-translation": [
+        "dist/ui-component-example-proposal-translation",
+        "dist/ui-component-example-proposal-translation/ui-component-example-proposal-translation"
+      ],
+      "ui-model-editable": [
+        "dist/ui-model-editable",
+        "dist/ui-model-editable/ui-model-editable"
       ]
     }
   },

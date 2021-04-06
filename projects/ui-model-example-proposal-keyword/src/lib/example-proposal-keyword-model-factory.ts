@@ -1,6 +1,6 @@
-import {ExampleProposalKeywordModel} from './example-proposal-keyword-model';
-import {ExampleProposalKeywordHandle} from 'service-example-proposal-keyword';
+import {ExampleProposalKeywordModel} from 'ui-component-example-proposal-keyword';
+import {ExampleProposalKeywordDataModel} from './example-proposal-keyword-data-model';
 
 export interface ExampleProposalKeywordModelFactory {
-  getExampleProposalKeywordModel(handle: ExampleProposalKeywordHandle): ExampleProposalKeywordModel;
+  getExampleProposalKeywordModel(handle: ExampleProposalKeywordDataModel): ExampleProposalKeywordModel;
 }

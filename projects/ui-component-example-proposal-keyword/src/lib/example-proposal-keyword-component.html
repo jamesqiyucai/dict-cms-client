@@ -1,0 +1,5 @@
+<div>
+  <label>
+    <input #keywordInput [disabled]="!model.editingEnabled" [value]="model.text$ | async" (input)="model.setText(keywordInput.value)">
+  </label>
+</div>

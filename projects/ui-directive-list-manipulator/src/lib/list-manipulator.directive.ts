@@ -6,18 +6,15 @@ import { ListManipulatorContainerComponent } from './list-manipulator-container/
   selector: '[libListManipulator]'
 })
 export class ListManipulatorDirective {
-
   constructor(
     private viewContainerRef: ViewContainerRef,
     private templateRef: TemplateRef<any>,
     private componentFactoryResolver: ComponentFactoryResolver
   ) { }
-
   @Input() public set models(manipulatorModel: ListManipulatorModel) {
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(ListManipulatorContainerComponent);
     const containerComponentRef = this.viewContainerRef.createComponent<ListManipulatorContainerComponent>(componentFactory);
     containerComponentRef.instance.data = this.templateRef;
     containerComponentRef.instance.model = manipulatorModel;
   }
-
 }

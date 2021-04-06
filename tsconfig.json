@@ -234,6 +234,156 @@
     },
     {
       "path": "./projects/ui-model-list-example-proposal-keyword/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-list-example-proposal-translation/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-list-example-proposal-translation/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-example-proposal-source-book/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-example-proposal-source-book/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-example-proposal-source-journal/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-example-proposal-source-journal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-example-proposal-translation/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-example-proposal-translation/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-example-proposal-keyword/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-example-proposal-keyword/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-example-translation/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-example-translation/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-list-example-proposal-translation-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-list-example-proposal-translation-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-list-example-proposal-keyword-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-list-example-proposal-keyword-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-example-keyword/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-example-keyword/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-keyword-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-keyword-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-translation-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-translation-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-keyword-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-keyword-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-translation-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-translation-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-example-source-journal/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-example-source-journal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-example-source-book/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-example-source-book/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-source-book-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-source-book-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-source-journal-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-source-journal-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-source-book-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-source-book-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-source-journal-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-example-proposal-source-journal-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-source-base/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-source-base/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-source-base/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-source-base/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-source-base-default-impl/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-source-base-default-impl/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-model-source-type/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-model-source-type/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-example-proposal/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-example-proposal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-component-example/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-component-example/tsconfig.spec.json"
     }
   ]
 }

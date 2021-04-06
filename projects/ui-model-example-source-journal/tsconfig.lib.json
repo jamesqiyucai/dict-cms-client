@@ -11,21 +11,21 @@
       "es2018"
     ],
     "paths": {
-      "service-source": [
-        "dist/service-source",
-        "dist/service-source/service-source"
+      "ui-model-source-base": [
+        "dist/ui-model-source-base",
+        "dist/ui-model-source-base/ui-model-source-base"
       ],
-      "service-example-source-journal": [
-        "dist/service-example-source-journal",
-        "dist/service-example-source-journal/service-example-source-journal"
+      "ui-component-source-base": [
+        "dist/ui-component-source-base",
+        "dist/ui-component-source-base/ui-component-source-base"
       ],
-      "ui-model-source": [
-        "dist/ui-model-source",
-        "dist/ui-model-source/ui-model-source"
+      "ui-model-source-type": [
+        "dist/ui-model-source-type",
+        "dist/ui-model-source-type/ui-model-source-type"
       ],
-      "ui-model-editable": [
-        "dist/ui-model-editable",
-        "dist/ui-model-editable/ui-model-editable"
+      "ui-component-example-source-journal": [
+        "dist/ui-component-example-source-journal",
+        "dist/ui-component-example-source-journal/ui-component-example-source-journal"
       ]
     }
   },

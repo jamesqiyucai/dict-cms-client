@@ -1,0 +1,18 @@
+{
+  "ui-model-example-keyword-default-impl": [
+    "dist/ui-model-example-keyword-default-impl",
+    "dist/ui-model-example-keyword-default-impl/ui-model-example-keyword-default-impl"
+  ],
+  "ui-model-example-proposal-keyword": [
+    "dist/ui-model-example-proposal-keyword",
+    "dist/ui-model-example-proposal-keyword/ui-model-example-proposal-keyword"
+  ],
+  "ui-component-example-proposal-keyword": [
+    "dist/ui-component-example-proposal-keyword",
+    "dist/ui-component-example-proposal-keyword/ui-component-example-proposal-keyword"
+  ],
+  "ui-model-editable": [
+    "dist/ui-model-editable",
+    "dist/ui-model-editable/ui-model-editable"
+  ]
+}

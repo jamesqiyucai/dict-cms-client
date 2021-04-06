@@ -1,7 +1,7 @@
-import {ExampleSourceJournalModel} from './example-source-journal-model';
-import {SourceFactory} from 'ui-model-source';
-import {ExampleSourceJournalHandle} from 'service-example-source-journal';
+import {ExampleSourceJournalModel} from 'ui-component-example-source-journal';
+import {SourceFactory} from 'ui-model-source-base';
+import {ExampleSourceJournalDataModel} from './example-source-journal-data-model';
 
 export interface ExampleSourceJournalModelFactory extends SourceFactory {
-  getSource(handle: ExampleSourceJournalHandle): ExampleSourceJournalModel | null;
+  getSource(handle: ExampleSourceJournalDataModel): ExampleSourceJournalModel | null;
 }

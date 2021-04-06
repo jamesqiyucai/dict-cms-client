@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy, TemplateRef, Input } from '@angular
 import {ListManipulatorModel} from '../list-manipulator-model';
 import {List} from 'immutable';
 import {Observable} from 'rxjs';
-import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
+import {CdkDragDrop} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'lib-list-manipulator-container',
@@ -33,11 +33,16 @@ export class ListManipulatorContainerComponent {
   @Input() public set model(elementModels: ListManipulatorModel) {
     this._listModel = elementModels;
   }
-
+  public get draggingDisabled() {
+    return !this.model.editingEnabled;
+  }
   public drop(event: CdkDragDrop<any>) {
     this._listModel.moveElement(event.previousIndex, event.currentIndex);
   }
   public add() {
     this._listModel.addElement();
+  }
+  public remove(index: number) {
+    this._listModel.deleteElement(index);
   }
 }

@@ -1,0 +1,18 @@
+{
+  "ui-model-list-example-proposal-translation": [
+    "dist/ui-model-list-example-proposal-translation",
+    "dist/ui-model-list-example-proposal-translation/ui-model-list-example-proposal-translation"
+  ],
+  "ui-directive-list-manipulator": [
+    "dist/ui-directive-list-manipulator",
+    "dist/ui-directive-list-manipulator/ui-directive-list-manipulator"
+  ],
+  "ui-model-example-proposal-translation": [
+    "dist/ui-model-example-proposal-translation",
+    "dist/ui-model-example-proposal-translation/ui-model-example-proposal-translation"
+  ],
+  "ui-component-example-proposal-translation": [
+    "dist/ui-component-example-proposal-translation",
+    "dist/ui-component-example-proposal-translation/ui-component-example-proposal-translation"
+  ]
+}

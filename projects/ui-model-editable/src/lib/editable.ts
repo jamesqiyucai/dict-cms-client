@@ -1,5 +1,5 @@
 export interface Editable {
-  readonly editable: boolean;
+  readonly editingEnabled: boolean;
   enableEditing(): void;
   disableEditing(): void;
 }

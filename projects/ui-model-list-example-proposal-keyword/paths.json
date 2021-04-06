@@ -1,0 +1,10 @@
+{
+  "ui-model-example-proposal-keyword": [
+    "dist/ui-model-example-proposal-keyword",
+    "dist/ui-model-example-proposal-keyword/ui-model-example-proposal-keyword"
+  ],
+  "ui-directive-list-manipulator": [
+    "dist/ui-directive-list-manipulator",
+    "dist/ui-directive-list-manipulator/ui-directive-list-manipulator"
+  ]
+}

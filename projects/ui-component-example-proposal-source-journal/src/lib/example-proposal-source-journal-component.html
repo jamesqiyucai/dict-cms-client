@@ -1,0 +1,50 @@
+<div>
+  <label>
+    <input
+      #authorInput
+      [disabled]="!model.editingEnabled"
+      autocomplete="off"
+      placeholder="Author"
+      [value]="model.author$ | async"
+      (input)="model.setAuthor(authorInput.value)"
+    >
+  </label>
+  <label>
+    <input
+      #newspaperTitleInput
+      [disabled]="!model.editingEnabled"
+      autocomplete="off"
+      placeholder="NewspaperTitle"
+      [value]="model.journalTitle$ | async"
+      (input)="model.setAuthor(newspaperTitleInput.value)"
+    >
+  </label>
+  <label>
+    <input
+      #passageTitleInput
+      [disabled]="!model.editingEnabled"
+      placeholder="PassageTitle"
+      [value]="model.passageTitle$ | async"
+      (input)="model.setPassageTitle(passageTitleInput.value)"
+    >
+  </label>
+  <label>
+    <input
+      #pageNumberInput
+      [disabled]="!model.editingEnabled"
+      type="number"
+      placeholder="PageNumber"
+      [value]="model.page$ | async"
+      (input)="model.setPage(pageNumberInput.value)"
+    >
+  </label>
+  <label>PublishDate:
+    <input
+      #dateInput
+      [disabled]="!model.editingEnabled"
+      type="date"
+      placeholder="PublishingDate"
+      [value]="model.publishDate$ | async"
+      (input)="model.setPublishDate(dateInput.value)"
+    ></label>
+</div>

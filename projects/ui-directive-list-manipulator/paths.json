@@ -1,0 +1,6 @@
+{
+  "ui-model-editable": [
+    "dist/ui-model-editable",
+    "dist/ui-model-editable/ui-model-editable"
+  ]
+}

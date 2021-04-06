@@ -1,14 +1,10 @@
 {
-  "service-source": [
-    "dist/service-source",
-    "dist/service-source/service-source"
+  "ui-model-source-base": [
+    "dist/ui-model-source-base",
+    "dist/ui-model-source-base/ui-model-source-base"
   ],
-  "service-example-source-journal": [
-    "dist/service-example-source-journal",
-    "dist/service-example-source-journal/service-example-source-journal"
-  ],
-  "ui-model-source": [
-    "dist/ui-model-source",
-    "dist/ui-model-source/ui-model-source"
+  "ui-component-example-source-journal": [
+    "dist/ui-component-example-source-journal",
+    "dist/ui-component-example-source-journal/ui-component-example-source-journal"
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "service-example-keyword": [
-    "dist/service-example-keyword",
-    "dist/service-example-keyword/service-example-keyword"
+  "ui-component-example-keyword": [
+    "dist/ui-component-example-keyword",
+    "dist/ui-component-example-keyword/ui-component-example-keyword"
   ]
 }

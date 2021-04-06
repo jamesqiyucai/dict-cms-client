@@ -1661,6 +1661,1006 @@
           }
         }
       }
+    },
+    "ui-model-list-example-proposal-translation": {
+      "projectType": "library",
+      "root": "projects/ui-model-list-example-proposal-translation",
+      "sourceRoot": "projects/ui-model-list-example-proposal-translation/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-list-example-proposal-translation/tsconfig.lib.json",
+            "project": "projects/ui-model-list-example-proposal-translation/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-list-example-proposal-translation/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-list-example-proposal-translation/src/test.ts",
+            "tsConfig": "projects/ui-model-list-example-proposal-translation/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-list-example-proposal-translation/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-list-example-proposal-translation/tsconfig.lib.json",
+              "projects/ui-model-list-example-proposal-translation/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-example-proposal-source-book": {
+      "projectType": "library",
+      "root": "projects/ui-component-example-proposal-source-book",
+      "sourceRoot": "projects/ui-component-example-proposal-source-book/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-example-proposal-source-book/tsconfig.lib.json",
+            "project": "projects/ui-component-example-proposal-source-book/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-example-proposal-source-book/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-example-proposal-source-book/src/test.ts",
+            "tsConfig": "projects/ui-component-example-proposal-source-book/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-example-proposal-source-book/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-example-proposal-source-book/tsconfig.lib.json",
+              "projects/ui-component-example-proposal-source-book/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-example-proposal-source-journal": {
+      "projectType": "library",
+      "root": "projects/ui-component-example-proposal-source-journal",
+      "sourceRoot": "projects/ui-component-example-proposal-source-journal/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-example-proposal-source-journal/tsconfig.lib.json",
+            "project": "projects/ui-component-example-proposal-source-journal/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-example-proposal-source-journal/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-example-proposal-source-journal/src/test.ts",
+            "tsConfig": "projects/ui-component-example-proposal-source-journal/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-example-proposal-source-journal/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-example-proposal-source-journal/tsconfig.lib.json",
+              "projects/ui-component-example-proposal-source-journal/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-example-proposal-translation": {
+      "projectType": "library",
+      "root": "projects/ui-component-example-proposal-translation",
+      "sourceRoot": "projects/ui-component-example-proposal-translation/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-example-proposal-translation/tsconfig.lib.json",
+            "project": "projects/ui-component-example-proposal-translation/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-example-proposal-translation/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-example-proposal-translation/src/test.ts",
+            "tsConfig": "projects/ui-component-example-proposal-translation/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-example-proposal-translation/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-example-proposal-translation/tsconfig.lib.json",
+              "projects/ui-component-example-proposal-translation/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-example-proposal-keyword": {
+      "projectType": "library",
+      "root": "projects/ui-component-example-proposal-keyword",
+      "sourceRoot": "projects/ui-component-example-proposal-keyword/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-example-proposal-keyword/tsconfig.lib.json",
+            "project": "projects/ui-component-example-proposal-keyword/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-example-proposal-keyword/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-example-proposal-keyword/src/test.ts",
+            "tsConfig": "projects/ui-component-example-proposal-keyword/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-example-proposal-keyword/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-example-proposal-keyword/tsconfig.lib.json",
+              "projects/ui-component-example-proposal-keyword/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-example-translation": {
+      "projectType": "library",
+      "root": "projects/ui-component-example-translation",
+      "sourceRoot": "projects/ui-component-example-translation/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-example-translation/tsconfig.lib.json",
+            "project": "projects/ui-component-example-translation/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-example-translation/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-example-translation/src/test.ts",
+            "tsConfig": "projects/ui-component-example-translation/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-example-translation/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-example-translation/tsconfig.lib.json",
+              "projects/ui-component-example-translation/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-list-example-proposal-translation-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-list-example-proposal-translation-default-impl",
+      "sourceRoot": "projects/ui-model-list-example-proposal-translation-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-list-example-proposal-translation-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-list-example-proposal-translation-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-list-example-proposal-translation-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-list-example-proposal-translation-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-list-example-proposal-translation-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-list-example-proposal-translation-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-list-example-proposal-translation-default-impl/tsconfig.lib.json",
+              "projects/ui-model-list-example-proposal-translation-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-list-example-proposal-keyword-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-list-example-proposal-keyword-default-impl",
+      "sourceRoot": "projects/ui-model-list-example-proposal-keyword-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-list-example-proposal-keyword-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-list-example-proposal-keyword-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-list-example-proposal-keyword-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-list-example-proposal-keyword-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-list-example-proposal-keyword-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-list-example-proposal-keyword-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-list-example-proposal-keyword-default-impl/tsconfig.lib.json",
+              "projects/ui-model-list-example-proposal-keyword-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-example-keyword": {
+      "projectType": "library",
+      "root": "projects/ui-component-example-keyword",
+      "sourceRoot": "projects/ui-component-example-keyword/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-example-keyword/tsconfig.lib.json",
+            "project": "projects/ui-component-example-keyword/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-example-keyword/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-example-keyword/src/test.ts",
+            "tsConfig": "projects/ui-component-example-keyword/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-example-keyword/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-example-keyword/tsconfig.lib.json",
+              "projects/ui-component-example-keyword/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-keyword-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-keyword-default-impl",
+      "sourceRoot": "projects/ui-model-example-keyword-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-keyword-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-example-keyword-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-keyword-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-keyword-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-example-keyword-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-keyword-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-keyword-default-impl/tsconfig.lib.json",
+              "projects/ui-model-example-keyword-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-translation-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-translation-default-impl",
+      "sourceRoot": "projects/ui-model-example-translation-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-translation-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-example-translation-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-translation-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-translation-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-example-translation-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-translation-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-translation-default-impl/tsconfig.lib.json",
+              "projects/ui-model-example-translation-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-proposal-keyword-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-proposal-keyword-default-impl",
+      "sourceRoot": "projects/ui-model-example-proposal-keyword-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-proposal-keyword-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-example-proposal-keyword-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-proposal-keyword-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-proposal-keyword-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-example-proposal-keyword-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-proposal-keyword-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-proposal-keyword-default-impl/tsconfig.lib.json",
+              "projects/ui-model-example-proposal-keyword-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-proposal-translation-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-proposal-translation-default-impl",
+      "sourceRoot": "projects/ui-model-example-proposal-translation-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-proposal-translation-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-example-proposal-translation-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-proposal-translation-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-proposal-translation-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-example-proposal-translation-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-proposal-translation-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-proposal-translation-default-impl/tsconfig.lib.json",
+              "projects/ui-model-example-proposal-translation-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-example-source-journal": {
+      "projectType": "library",
+      "root": "projects/ui-component-example-source-journal",
+      "sourceRoot": "projects/ui-component-example-source-journal/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-example-source-journal/tsconfig.lib.json",
+            "project": "projects/ui-component-example-source-journal/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-example-source-journal/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-example-source-journal/src/test.ts",
+            "tsConfig": "projects/ui-component-example-source-journal/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-example-source-journal/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-example-source-journal/tsconfig.lib.json",
+              "projects/ui-component-example-source-journal/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-example-source-book": {
+      "projectType": "library",
+      "root": "projects/ui-component-example-source-book",
+      "sourceRoot": "projects/ui-component-example-source-book/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-example-source-book/tsconfig.lib.json",
+            "project": "projects/ui-component-example-source-book/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-example-source-book/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-example-source-book/src/test.ts",
+            "tsConfig": "projects/ui-component-example-source-book/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-example-source-book/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-example-source-book/tsconfig.lib.json",
+              "projects/ui-component-example-source-book/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-source-book-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-source-book-default-impl",
+      "sourceRoot": "projects/ui-model-example-source-book-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-source-book-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-example-source-book-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-source-book-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-source-book-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-example-source-book-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-source-book-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-source-book-default-impl/tsconfig.lib.json",
+              "projects/ui-model-example-source-book-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-source-journal-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-source-journal-default-impl",
+      "sourceRoot": "projects/ui-model-example-source-journal-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-source-journal-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-example-source-journal-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-source-journal-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-source-journal-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-example-source-journal-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-source-journal-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-source-journal-default-impl/tsconfig.lib.json",
+              "projects/ui-model-example-source-journal-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-proposal-source-book-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-proposal-source-book-default-impl",
+      "sourceRoot": "projects/ui-model-example-proposal-source-book-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-proposal-source-book-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-example-proposal-source-book-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-proposal-source-book-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-proposal-source-book-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-example-proposal-source-book-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-proposal-source-book-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-proposal-source-book-default-impl/tsconfig.lib.json",
+              "projects/ui-model-example-proposal-source-book-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-example-proposal-source-journal-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-example-proposal-source-journal-default-impl",
+      "sourceRoot": "projects/ui-model-example-proposal-source-journal-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-example-proposal-source-journal-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-example-proposal-source-journal-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-example-proposal-source-journal-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-example-proposal-source-journal-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-example-proposal-source-journal-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-example-proposal-source-journal-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-example-proposal-source-journal-default-impl/tsconfig.lib.json",
+              "projects/ui-model-example-proposal-source-journal-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-source-base": {
+      "projectType": "library",
+      "root": "projects/ui-component-source-base",
+      "sourceRoot": "projects/ui-component-source-base/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-source-base/tsconfig.lib.json",
+            "project": "projects/ui-component-source-base/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-source-base/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-source-base/src/test.ts",
+            "tsConfig": "projects/ui-component-source-base/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-source-base/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-source-base/tsconfig.lib.json",
+              "projects/ui-component-source-base/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-source-base": {
+      "projectType": "library",
+      "root": "projects/ui-model-source-base",
+      "sourceRoot": "projects/ui-model-source-base/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-source-base/tsconfig.lib.json",
+            "project": "projects/ui-model-source-base/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-source-base/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-source-base/src/test.ts",
+            "tsConfig": "projects/ui-model-source-base/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-source-base/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-source-base/tsconfig.lib.json",
+              "projects/ui-model-source-base/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-source-base-default-impl": {
+      "projectType": "library",
+      "root": "projects/ui-model-source-base-default-impl",
+      "sourceRoot": "projects/ui-model-source-base-default-impl/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-source-base-default-impl/tsconfig.lib.json",
+            "project": "projects/ui-model-source-base-default-impl/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-source-base-default-impl/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-source-base-default-impl/src/test.ts",
+            "tsConfig": "projects/ui-model-source-base-default-impl/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-source-base-default-impl/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-source-base-default-impl/tsconfig.lib.json",
+              "projects/ui-model-source-base-default-impl/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-model-source-type": {
+      "projectType": "library",
+      "root": "projects/ui-model-source-type",
+      "sourceRoot": "projects/ui-model-source-type/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-model-source-type/tsconfig.lib.json",
+            "project": "projects/ui-model-source-type/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-model-source-type/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-model-source-type/src/test.ts",
+            "tsConfig": "projects/ui-model-source-type/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-model-source-type/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-model-source-type/tsconfig.lib.json",
+              "projects/ui-model-source-type/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-example-proposal": {
+      "projectType": "library",
+      "root": "projects/ui-component-example-proposal",
+      "sourceRoot": "projects/ui-component-example-proposal/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-example-proposal/tsconfig.lib.json",
+            "project": "projects/ui-component-example-proposal/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-example-proposal/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-example-proposal/src/test.ts",
+            "tsConfig": "projects/ui-component-example-proposal/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-example-proposal/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-example-proposal/tsconfig.lib.json",
+              "projects/ui-component-example-proposal/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ui-component-example": {
+      "projectType": "library",
+      "root": "projects/ui-component-example",
+      "sourceRoot": "projects/ui-component-example/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-component-example/tsconfig.lib.json",
+            "project": "projects/ui-component-example/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-component-example/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-component-example/src/test.ts",
+            "tsConfig": "projects/ui-component-example/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-component-example/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-component-example/tsconfig.lib.json",
+              "projects/ui-component-example/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "client-entry",

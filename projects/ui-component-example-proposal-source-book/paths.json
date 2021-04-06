@@ -1,0 +1,10 @@
+{
+  "ui-component-example-source-book": [
+    "dist/ui-component-example-source-book",
+    "dist/ui-component-example-source-book/ui-model-example-source-book"
+  ],
+  "ui-model-editable": [
+    "dist/ui-model-editable",
+    "dist/ui-model-editable/ui-model-editable"
+  ]
+}

@@ -9,7 +9,21 @@
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "paths": {
+      "service-example-keyword": [
+        "dist/service-example-keyword",
+        "dist/service-example-keyword/service-example-keyword"
+      ],
+      "service-example-translation": [
+        "dist/service-example-translation",
+        "dist/service-example-translation/service-example-translation"
+      ],
+      "service-source": [
+        "dist/service-source",
+        "dist/service-source/service-source"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,

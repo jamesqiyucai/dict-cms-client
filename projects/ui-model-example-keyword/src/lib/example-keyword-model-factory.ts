@@ -1,6 +1,6 @@
-import {ExampleKeywordModel} from './example-keyword-model';
-import {ExampleKeywordHandle} from 'service-example-keyword';
+import {ExampleKeywordModel} from 'ui-component-example-keyword';
+import {ExampleKeywordDataModel} from './example-keyword-data-model';
 
 export interface ExampleKeywordModelFactory {
-  getExampleKeywordModel(handle: ExampleKeywordHandle): ExampleKeywordModel;
+  getExampleKeywordModel(handle: ExampleKeywordDataModel): ExampleKeywordModel;
 }

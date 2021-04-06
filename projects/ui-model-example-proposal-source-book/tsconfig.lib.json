@@ -11,29 +11,33 @@
       "es2018"
     ],
     "paths": {
-      "ui-model-editable": [
-        "dist/ui-model-editable",
-        "dist/ui-model-editable/ui-model-editable"
-      ],
       "ui-model-example-source-book": [
         "dist/ui-model-example-source-book",
         "dist/ui-model-example-source-book/ui-model-example-source-book"
       ],
-      "ui-model-source": [
-        "dist/ui-model-source",
-        "dist/ui-model-source/ui-model-source"
+      "ui-model-source-base": [
+        "dist/ui-model-source-base",
+        "dist/ui-model-source-base/ui-model-source-base"
       ],
-      "service-source": [
-        "dist/service-source",
-        "dist/service-source/service-source"
+      "ui-component-source-base": [
+        "dist/ui-component-source-base",
+        "dist/ui-component-source-base/ui-component-source-base"
       ],
-      "service-example-source-book": [
-        "dist/service-example-source-book",
-        "dist/service-example-source-book/service-example-source-book"
+      "ui-model-source-type": [
+        "dist/ui-model-source-type",
+        "dist/ui-model-source-type/ui-model-source-type"
       ],
-      "service-example-proposal-source-book": [
-        "dist/service-example-proposal-source-book",
-        "dist/service-example-proposal-source-book/service-example-proposal-source-book"
+      "ui-component-example-source-book": [
+        "dist/ui-component-example-source-book",
+        "dist/ui-component-example-source-book/ui-model-example-source-book"
+      ],
+      "ui-component-example-proposal-source-book": [
+        "dist/ui-component-example-proposal-source-book",
+        "dist/ui-component-example-proposal-source-book/ui-component-example-proposal-source-book"
+      ],
+      "ui-model-editable": [
+        "dist/ui-model-editable",
+        "dist/ui-model-editable/ui-model-editable"
       ]
     }
   },

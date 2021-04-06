@@ -1,0 +1,10 @@
+{
+  "ui-model-example-translation": [
+    "dist/ui-model-example-translation",
+    "dist/ui-model-example-translation/ui-model-example-translation"
+  ],
+  "ui-component-example-translation": [
+    "dist/ui-component-example-translation",
+    "dist/ui-component-example-translation/ui-component-example-translation"
+  ]
+}

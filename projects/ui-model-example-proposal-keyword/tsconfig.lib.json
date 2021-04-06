@@ -15,13 +15,17 @@
         "dist/ui-model-example-keyword",
         "dist/ui-model-example-keyword/ui-model-example-keyword"
       ],
-      "service-example-keyword": [
-        "dist/service-example-keyword",
-        "dist/service-example-keyword/service-example-keyword"
+      "ui-component-example-keyword": [
+        "dist/ui-component-example-keyword",
+        "dist/ui-component-example-keyword/ui-component-example-keyword"
       ],
-      "service-example-proposal-keyword": [
-        "dist/service-example-proposal-keyword",
-        "dist/service-example-proposal-keyword/service-example-proposal-keyword"
+      "ui-component-example-proposal-keyword": [
+        "dist/ui-component-example-proposal-keyword",
+        "dist/ui-component-example-proposal-keyword/ui-component-example-proposal-keyword"
+      ],
+      "ui-model-editable": [
+        "dist/ui-model-editable",
+        "dist/ui-model-editable/ui-model-editable"
       ]
     }
   },

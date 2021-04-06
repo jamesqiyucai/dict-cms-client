@@ -1,0 +1,10 @@
+{
+  "ui-model-example-keyword": [
+    "dist/ui-model-example-keyword",
+    "dist/ui-model-example-keyword/ui-model-example-keyword"
+  ],
+  "ui-component-example-keyword": [
+    "dist/ui-component-example-keyword",
+    "dist/ui-component-example-keyword/ui-component-example-keyword"
+  ]
+}

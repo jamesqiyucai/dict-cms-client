@@ -1,15 +1,7 @@
-import {SourceFactory} from 'ui-model-source';
-import {ExampleProposalSourceJournalModel} from './example-proposal-source-journal-model';
-import {SourceType} from 'service-source';
-import {ExampleProposalSourceJournalHandle} from 'service-example-proposal-source-journal';
-import {ExampleProposalSourceJournalModelImpl} from './example-proposal-source-journal-model.impl';
+import {SourceFactory} from 'ui-model-source-base';
+import {ExampleProposalSourceJournalDataModel} from './example-proposal-source-journal-data-model';
+import {ExampleProposalSourceJournalModel} from 'ui-component-example-proposal-source-journal';
 
-function isExampleProposalSourceJournalHandle(handle: unknown): handle is ExampleProposalSourceJournalHandle {
-  return handle && (handle as ExampleProposalSourceJournalHandle).type == SourceType.Journal && (handle as ExampleProposalSourceJournalHandle).editable == true;
-}
-
-export class ExampleProposalSourceJournalModelFactory implements SourceFactory {
-  createSource(handle: unknown): ExampleProposalSourceJournalModel | null {
-    return isExampleProposalSourceJournalHandle(handle) ? new ExampleProposalSourceJournalModelImpl(handle) : null;
-  }
+export interface ExampleProposalSourceJournalModelFactory extends SourceFactory {
+  getSource(handle: ExampleProposalSourceJournalDataModel): ExampleProposalSourceJournalModel | null;
 }
