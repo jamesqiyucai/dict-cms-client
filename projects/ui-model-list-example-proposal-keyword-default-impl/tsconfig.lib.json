@@ -1,0 +1,53 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/lib",
+    "target": "es2015",
+    "declaration": true,
+    "inlineSources": true,
+    "types": [],
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+    "paths": {
+      "ui-directive-list-manipulator": [
+        "dist/ui-directive-list-manipulator",
+        "dist/ui-directive-list-manipulator/ui-directive-list-manipulator"
+      ],
+      "ui-model-editable": [
+        "dist/ui-model-editable",
+        "dist/ui-model-editable/ui-model-editable"
+      ],
+      "ui-model-list-example-proposal-keyword": [
+        "dist/ui-model-list-example-proposal-keyword",
+        "dist/ui-model-list-example-proposal-keyword/ui-model-list-example-proposal-keyword"
+      ],
+      "ui-model-example-proposal-keyword": [
+        "dist/ui-model-example-proposal-keyword",
+        "dist/ui-model-example-proposal-keyword/ui-model-example-proposal-keyword"
+      ],
+      "ui-model-example-keyword": [
+        "dist/ui-model-example-keyword",
+        "dist/ui-model-example-keyword/ui-model-example-keyword"
+      ],
+      "ui-component-example-keyword": [
+        "dist/ui-component-example-keyword",
+        "dist/ui-component-example-keyword/ui-component-example-keyword"
+      ],
+      "ui-component-example-proposal-keyword": [
+        "dist/ui-component-example-proposal-keyword",
+        "dist/ui-component-example-proposal-keyword/ui-component-example-proposal-keyword"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "enableResourceInlining": true
+  },
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts"
+  ]
+}

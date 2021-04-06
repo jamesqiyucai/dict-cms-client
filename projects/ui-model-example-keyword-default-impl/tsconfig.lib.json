@@ -1,0 +1,33 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/lib",
+    "target": "es2015",
+    "declaration": true,
+    "inlineSources": true,
+    "types": [],
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+    "paths": {
+      "ui-model-example-keyword": [
+        "dist/ui-model-example-keyword",
+        "dist/ui-model-example-keyword/ui-model-example-keyword"
+      ],
+      "ui-component-example-keyword": [
+        "dist/ui-component-example-keyword",
+        "dist/ui-component-example-keyword/ui-component-example-keyword"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "enableResourceInlining": true
+  },
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts"
+  ]
+}

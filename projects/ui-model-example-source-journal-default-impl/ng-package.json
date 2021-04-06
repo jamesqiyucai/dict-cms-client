@@ -1,0 +1,7 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/ui-model-example-source-journal-default-impl",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  }
+}

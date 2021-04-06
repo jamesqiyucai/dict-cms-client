@@ -1,0 +1,65 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/lib",
+    "target": "es2015",
+    "declaration": true,
+    "inlineSources": true,
+    "types": [],
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+    "paths": {
+      "ui-model-example-proposal-source-journal": [
+        "dist/ui-model-example-proposal-source-journal",
+        "dist/ui-model-example-proposal-source-journal/ui-model-example-proposal-source-journal"
+      ],
+      "ui-model-example-source-journal": [
+        "dist/ui-model-example-source-journal",
+        "dist/ui-model-example-source-journal/ui-model-example-source-journal"
+      ],
+      "ui-model-source-base": [
+        "dist/ui-model-source-base",
+        "dist/ui-model-source-base/ui-model-source-base"
+      ],
+      "ui-component-source-base": [
+        "dist/ui-component-source-base",
+        "dist/ui-component-source-base/ui-component-source-base"
+      ],
+      "ui-model-source-type": [
+        "dist/ui-model-source-type",
+        "dist/ui-model-source-type/ui-model-source-type"
+      ],
+      "ui-component-example-source-journal": [
+        "dist/ui-component-example-source-journal",
+        "dist/ui-component-example-source-journal/ui-component-example-source-journal"
+      ],
+      "ui-component-example-proposal-source-journal": [
+        "dist/ui-component-example-proposal-source-journal",
+        "dist/ui-component-example-proposal-source-journal/ui-component-example-proposal-source-journal"
+      ],
+      "ui-model-editable": [
+        "dist/ui-model-editable",
+        "dist/ui-model-editable/ui-model-editable"
+      ],
+      "ui-model-example-source-journal-default-impl": [
+        "dist/ui-model-example-source-journal-default-impl",
+        "dist/ui-model-example-source-journal-default-impl/ui-model-example-source-journal-default-impl"
+      ],
+      "ui-model-source-base-default-impl": [
+        "dist/ui-model-source-base-default-impl",
+        "dist/ui-model-source-base-default-impl/ui-model-source-base-default-impl"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "enableResourceInlining": true
+  },
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/lib",
+    "target": "es2015",
+    "declaration": true,
+    "inlineSources": true,
+    "types": [],
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+    "paths": {
+      "ui-model-example-proposal-translation": [
+        "dist/ui-model-example-proposal-translation",
+        "dist/ui-model-example-proposal-translation/ui-model-example-proposal-translation"
+      ],
+      "ui-model-example-translation": [
+        "dist/ui-model-example-translation",
+        "dist/ui-model-example-translation/ui-model-example-translation"
+      ],
+      "ui-component-example-translation": [
+        "dist/ui-component-example-translation",
+        "dist/ui-component-example-translation/ui-component-example-translation"
+      ],
+      "ui-component-example-proposal-translation": [
+        "dist/ui-component-example-proposal-translation",
+        "dist/ui-component-example-proposal-translation/ui-component-example-proposal-translation"
+      ],
+      "ui-model-editable": [
+        "dist/ui-model-editable",
+        "dist/ui-model-editable/ui-model-editable"
+      ],
+      "ui-model-example-translation-default-impl": [
+        "dist/ui-model-example-translation-default-impl",
+        "dist/ui-model-example-translation-default-impl/ui-model-example-translation-default-impl"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "enableResourceInlining": true
+  },
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts"
+  ]
+}
