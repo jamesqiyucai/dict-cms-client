@@ -10,6 +10,9 @@
 #node build.js service-example-translation
 #node build.js service-example-proposal-translation
 
+node build.js ui-model-editable
+node build.js ui-model-source-type
+
 node build.js ui-component-source-base
 node build.js ui-component-example-keyword
 node build.js ui-component-example-translation
@@ -20,13 +23,11 @@ node build.js ui-component-example-proposal-translation
 node build.js ui-component-example-proposal-source-book
 node build.js ui-component-example-proposal-source-journal
 
-node build.js ui-directive-editable
-node build.js ui-directive-list-manipulator
-
-node build.js ui-model-editable
-node build.js ui-model-source-type
 node build.js ui-model-source-base
 node build.js ui-model-source-base-default-impl
+
+node build.js ui-directive-editable
+node build.js ui-directive-list-manipulator
 
 node build.js ui-model-example-keyword
 node build.js ui-model-example-keyword-default-impl
